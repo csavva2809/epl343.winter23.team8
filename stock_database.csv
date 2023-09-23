@@ -1,4 +1,11 @@
-quantity, type, price_per_unit
-15,rose,2.5
-15,sunflower,3
-15,cactus, 4.5
+quantity,type,price
+10,Roses,2.99
+15,Tulips,1.99
+20,Daisies,0.99
+12,Orchids,4.99
+8,Sunflowers,3.49
+25,Lilies,3.29
+18,Carnations,2.49
+22,Hydrangeas,5.99
+14,Peonies,4.79
+30,Chrysanthemums,2.19
