@@ -1,0 +1,27 @@
+/* header start*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgb(235, 115, 199);
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Home Shop Blog About contact at the same line*/
+}
+
+#navbar li{
+    list-style: none; /*remove the bullet point from the list*/
+    padding: 0 20px;
+
+}
+
+#navbar li a{
+    text-decoration: none;/*remove theunderlines from the list*/
+    font-size: 16px;
+    font-size: 600;
+}
