@@ -41,7 +41,7 @@
 #navbar li a.active::after,/*when the user is in a specific page the page has to be highlighted*/
 #navbar li a:hover::after{ 
     content: "";
-    width: 30%;
+    width: 50%;
     height: 2px;
     background: rgb(245, 245, 245);
     position: absolute;
