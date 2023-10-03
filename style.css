@@ -4,8 +4,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(164, 116, 150);
+    background: rgb(156, 150, 154);
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    /*I want the top tool bar to stay the whole time in the users view*/
+    position: sticky; 
+    top: 0;
+    left:0;
 }
 
 #navbar{
@@ -38,8 +43,27 @@
     content: "";
     width: 30%;
     height: 2px;
-    background: floralwhite;
+    background: rgb(245, 245, 245);
     position: absolute;
     bottom: -4px;
     left: 20px
+}
+
+/*home page*/
+
+#hero{
+    background-image: url(images/flower2.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size:cover;
+    background-position: top 50% right 20%;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h1{
+    padding-bottom: 15px;
+    color: rgb(97, 75, 87);
 }
