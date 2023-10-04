@@ -43,10 +43,24 @@
     /*smooth the selection bar*/
 }
 
+
+
 #navbar li a:hover,
 #navbar li a.active {
     /*home link highlighted*/
     color: floralwhite
+}
+
+#navbar a::after{
+    content:' ';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
 }
 
 #navbar li a.active::after,
@@ -78,42 +92,4 @@
 #hero h1 {
     padding-bottom: 15px;
     color: rgb(97, 75, 87);
-}
-#feature{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#feature .featureBox {
-    width: 150px;
-    height: 100 px;
-    text-align: center;
-    padding: 20px 10px;
-    box-shadow: 15px 15px 24px rgb(79, 71, 75);
-    border: 1px solid color(srgb rgba(92, 98, 112) green rgb(0, 0, 0));
-    border-radius: 4px;
-    margin: 15px;
-}
-
-#feature .featureBox :hover {
-    box-shadow: 30px 30px 64px rgb(255, 255, 255);
-
-}
-
-
-#feature .featureBox img{
-    width: 70%;
-    margin-bottom: 2px;
-}
-
-#feature .featureBox h4 {
-    display: inline-block;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 4px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(183, 162, 166);
-
 }
