@@ -1,5 +1,11 @@
+.section-p1 {
+    padding: 40px 80px;
+}
+
+
+
 /* header start*/
-#header{
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,38 +14,44 @@
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
     z-index: 999;
     /*I want the top tool bar to stay the whole time in the users view*/
-    position: sticky; 
+    position: sticky;
     top: 0;
-    left:0;
+    left: 0;
 }
 
-#navbar{
+#navbar {
     display: flex;
     align-items: center;
-    justify-content: center; /* Home Shop Blog About contact at the same line*/
+    justify-content: center;
+    /* Home Shop Blog About contact at the same line*/
 }
 
-#navbar li{
-    list-style: none; /*remove the bullet point from the list*/
+#navbar li {
+    list-style: none;
+    /*remove the bullet point from the list*/
     padding: 0 20px;
     position: relative;
 }
 
-#navbar li a{
-    text-decoration: none;/*remove theunderlines from the list*/
+#navbar li a {
+    text-decoration: none;
+    /*remove theunderlines from the list*/
     font-size: 16px;
     font-size: 600;
     color: black;
-    transition: 0.3s ease; /*smooth the selection bar*/
+    transition: 0.3s ease;
+    /*smooth the selection bar*/
 }
 
 #navbar li a:hover,
-#navbar li a.active{ /*home link highlighted*/ 
-    color:floralwhite
+#navbar li a.active {
+    /*home link highlighted*/
+    color: floralwhite
 }
 
-#navbar li a.active::after,/*when the user is in a specific page the page has to be highlighted*/
-#navbar li a:hover::after{ 
+#navbar li a.active::after,
+/*when the user is in a specific page the page has to be highlighted*/
+#navbar li a:hover::after {
     content: "";
     width: 50%;
     height: 2px;
@@ -51,11 +63,11 @@
 
 /*home page*/
 
-#hero{
+#hero {
     background-image: url(images/flower2.jpg);
     height: 90vh;
     width: 100%;
-    background-size:cover;
+    background-size: cover;
     background-position: top 50% right 20%;
     padding: 0 80px;
     display: flex;
@@ -63,7 +75,45 @@
     justify-content: center;
 }
 
-#hero h1{
+#hero h1 {
     padding-bottom: 15px;
     color: rgb(97, 75, 87);
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .featureBox {
+    width: 150px;
+    height: 100 px;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 15px 15px 24px rgb(79, 71, 75);
+    border: 1px solid color(srgb rgba(92, 98, 112) green rgb(0, 0, 0));
+    border-radius: 4px;
+    margin: 15px;
+}
+
+#feature .featureBox :hover {
+    box-shadow: 30px 30px 64px rgb(255, 255, 255);
+
+}
+
+
+#feature .featureBox img{
+    width: 70%;
+    margin-bottom: 2px;
+}
+
+#feature .featureBox h4 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(183, 162, 166);
+
 }
