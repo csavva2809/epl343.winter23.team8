@@ -105,7 +105,7 @@ span{
     left:50px;
 }
 #login input{
-    color:white;
+    color:rgb(0, 0, 0);
     font-size:15;
 
 }
@@ -113,6 +113,6 @@ span{
     left:450px;
 }
 #register input{
-    color:white;
+    color:rgb(0, 0, 0);
     font-size: 15;
 }
