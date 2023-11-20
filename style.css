@@ -26,11 +26,10 @@
 }
 
 #navbar li a{
-    text-decoration: none;/*remove theunderlines from the list*/
-    font-size: 16.5px;
-    font-size: 600;
+    text-decoration: none;
+    font-size: 1em; /* Use ems for scalability */
     color: black;
-    transition: 0.3s ease; /*smooth the selection bar*/
+    transition: 0.3s ease;
 }
 
 
@@ -145,13 +144,17 @@
 }
 
 #feature .featureBox {
-    width: 150px; /* Fixed width */
-    height: 170px; /* Fixed height */
+    flex: 1; /* Allow the boxes to grow and shrink */
+    padding: 1em; /* Use ems for scalability */
+    margin: 1em; /* Relative units for margins */
+
+    width: 30%; /* Fixed width */
+    height: 40%; /* Fixed height */
     text-align: center;
-    padding: 20px;
+  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border: none; /* Remove border */
-    margin: 50px; /* Space between boxes */
+   
     background-color: rgba(248, 248, 248, 0.653); /* Light background */
     display: flex;
     flex-direction: column;
@@ -166,8 +169,8 @@
 
 #feature .featureBox img {
     width: auto; /* Maintain aspect ratio */
-    height: 80px; /* Example size, adjust as needed */
-    margin-bottom: 20px; /* Space between image and title */
+    height: 6.5vh; /* Example size, adjust as needed */
+    margin-bottom:1em; /* Space between image and title */
 }
 
 #feature .featureBox h4 {
@@ -192,14 +195,15 @@
 }
 
 #product1 .pro {
+    flex: 1 1 calc(25% - 30px); /* Grow to fill space, but not more than 25% - margin */
+    margin: 15px; /* Keep a consistent margin */
+    padding: 1em; /* Padding based on parent font-size */
     width: 23%;
     min-width: 250px;
-    padding: 10px 12px;
     border: 1px solid#cce7d0;
     border-radius:25px;
     cursor: pointer;
     box-shadow:  20px 20px 30px rgba(0,0,0,0.02);
-    margin: 15px 0;
     transition: 0.2s ease;
 }
 #product1 .pro:hover{
@@ -208,6 +212,7 @@
 }
 #product1 .pro img{
     width:100%;
+    height: auto;
     border-radius:20px;
 
 }
@@ -225,7 +230,18 @@
     color: #1a1a1a;
     
 }
-/* #product1 .pro .des h5{
-    front-size: 12px;
-    color: rgb(243, 181, 25)
-} */
+
+
+/* Utilize media queries to adjust for smaller screens */
+@media (max-width: 768px) {
+    #product1 .pro {
+        flex-basis: calc(50% - 30px); /* Adjust to 50% for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #product1 .pro {
+        flex-basis: 100%; /* Stack on very small screens */
+    }
+}
+
