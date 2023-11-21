@@ -102,6 +102,8 @@
     align-items:first baseline;
     justify-content:center;
     position: relative; /* Add position relative here */
+    padding-top: 5%; /* Adjust this value to move the text up */
+
 }
 
 #hero h1 {
