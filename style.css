@@ -182,6 +182,27 @@
     border-radius: 5px; /* Slight rounding on corners */
 }
 
+.pro button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.pro button:focus {
+    outline: none;
+}
+
+.pro img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: for rounded corners */
+    transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+.pro button:hover img {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
 
 
 #product1{
