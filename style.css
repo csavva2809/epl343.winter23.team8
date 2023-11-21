@@ -155,7 +155,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border: none; /* Remove border */
    
-    background-color: rgba(248, 248, 248, 0.653); /* Light background */
+    background-color: rgba(248, 248, 248, 0.711); /* Light background */
     display: flex;
     flex-direction: column;
     justify-content: center;
