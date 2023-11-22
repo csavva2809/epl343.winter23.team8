@@ -22,12 +22,12 @@ else{
         password:password
     };
 
-    fetch('http://localhost:3000/usersInfo',{
+    fetch('http://localhost:3000/usersInfo.csv',{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(userData),
     })
-.then(Response => Response.json())
+.then(response => response.json())
 .then(data =>console.log(data))
 .catch(error => console.error('Error:',error))
 }
