@@ -7,21 +7,23 @@ function validateForm(){
     var confirmpassword = document.getElementById('confirmpassword').value;
 
 if(password!=confirmpassword){
-    alert('passwords dont match');
+    alert('passwords don\'t match');
 }
-    if (firstname=='' || lastname=='' || email=='' || password=='')
+    else if (firstname=='' || lastname=='' || email=='' || password=='')
 {
     alert('Please fill all the filds');
 }
-else{
+else
     alert('Sign up successful');
-    var userData={
-        firstname: firstname,
-        lastname: lastname,
-        email:email,
-        password:password
-    };
-localStorage.setItem('user',JSON.stringify(userData));
 
-}
+var csvData = '${firstname},${lastname},${email},${password}\n';
+
+    fetch('http://localhost:3000/usersInfo.csv',{
+        method:'POST',
+        headers:{'Content-Type':'taxt/csv'},
+        body: csvData,
+    })
+.then(response => {console.log(response);})
+.catch(error => {console.error('Error:',error);
+});
 }
