@@ -21,7 +21,14 @@ else{
         email:email,
         password:password
     };
-localStorage.setItem('user',JSON.stringify(userData));
 
+    fetch('http://localhost3000/userInfo',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify(userData),
+    })
+.then(Response => Response.json())
+.then(data =>console.log(data))
+.catch(error => console.error('Error:',error))
 }
 }
