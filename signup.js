@@ -18,14 +18,6 @@ else
 
 var csvData = '${firstname},${lastname},${email},${password}\n';
 
-
-    // var userData={
-    //     firstname: firstname,
-    //     lastname: lastname,
-    //     email:email,
-    //     password:password
-    // };
-
     fetch('http://localhost:3000/usersInfo.csv',{
         method:'POST',
         headers:{'Content-Type':'taxt/csv'},
