@@ -1,0 +1,191 @@
+/* header start*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background: rgb(156, 150, 154);
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    /*I want the top tool bar to stay the whole time in the users view*/
+    position: sticky; 
+    top: 0;
+    left:0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Home Shop Blog About contact at the same line*/
+}
+
+#navbar li{
+    list-style: none; /*remove the bullet point from the list*/
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;/*remove theunderlines from the list*/
+    font-size: 16.5px;
+    font-size: 600;
+    color: black;
+    transition: 0.3s ease; /*smooth the selection bar*/
+}
+
+
+
+#navbar li a:hover,
+#navbar li a.active{ /*home link highlighted*/ 
+    color:floralwhite
+}
+
+#navbar a::after{
+    content:' ';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+#navbar li a.active::after,/*when the user is in a specific page the page has to be highlighted*/
+#navbar li a:hover::after{ 
+    transform: scaleX(1);
+    content: "";
+    width: 55%;
+    height: 2px;
+    background: rgb(204, 199, 199);
+    position:absolute;
+    bottom: -4px;
+    left: 20px
+}
+
+#navbar li .btnLogin{
+    background: transparent;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+   
+}
+
+#navbar li .btnLogin:hover{
+    background: #fff;
+    color: black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#hero {
+    background-image: url(images/flower2.jpg);
+    height: 55vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    position: relative;
+    padding-top: 5%; /* Adjust this value to move the text up */
+}
+
+#hero h1 {
+    font-size: 6rem;
+    color: rgb(97, 75, 87);
+    margin-top: auto; /* This will push the content towards the top */
+    margin-bottom: 30%; /* Keeps content centered vertically if needed */
+    display: flex; /* Use flexbox to lay out child spans */
+    flex-direction: row; /* Layout the spans in a row */
+}
+
+/* Basic styling */
+body {
+    line-height: 0.5;
+    padding: 10 10px 10px 10px; /* Removed the top padding */
+    background: #f4f4f4;
+}
+
+body, html {
+    line-height: 0.5;
+    padding: 10 10px 10px 10px; /* Removed the top padding */
+    height: 100%;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.tagline {
+    color: #757575;
+    margin-bottom: 1em;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between; /* This will create space between the two columns */
+    align-items: flex-start; /* This will align the items to the top */
+}
+
+.about-info {
+    /* Make sure to limit the width of this container, otherwise it will take up 100% width */
+    width: 50%; /* Adjust this as necessary */
+}
+
+.map-container {
+    width: 50%; /* Adjust this as necessary */
+    /* If you need to adjust the size of the map itself, you could add a max-width here */
+    max-width: 400px; /* or any other value */
+}
+
+.map-container iframe {
+    width: 100%; /* This will make the map take the full width of its container */
+    height: 300px; /* Adjust height as needed */
+    border: none;
+}
+
+/* ... media queries ... */
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .about-info, .map-container {
+        width: 100%; /* On smaller screens, make both containers full width */
+    }
+
+    .map-container {
+        order: -1; /* This will move the map above the info on smaller screens */
+    }
+}
