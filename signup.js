@@ -7,7 +7,7 @@ function validateForm(){
     var confirmpassword = document.getElementById('confirmpassword').value;
 
 if(password!=confirmpassword){
-    alert('passwords dont match');
+    alert('passwords don\'t match');
 }
     if (firstname=='' || lastname=='' || email=='' || password=='')
 {
@@ -21,7 +21,14 @@ else{
         email:email,
         password:password
     };
-localStorage.setItem('user',JSON.stringify(userData));
 
+    fetch('http://localhost:3000/usersInfo.csv',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify(userData),
+    })
+.then(response => response.json())
+.then(data =>console.log(data))
+.catch(error => console.error('Error:',error))
 }
 }
