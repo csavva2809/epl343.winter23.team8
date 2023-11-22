@@ -22,7 +22,7 @@ else{
         password:password
     };
 
-    fetch('http://localhost:3000/userInfo',{
+    fetch('http://localhost:3000/usersInfo',{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(userData),
