@@ -7,7 +7,7 @@ function validateForm(){
     var confirmpassword = document.getElementById('confirmpassword').value;
 
 if(password!=confirmpassword){
-    alert('passwords dont match');
+    alert('passwords don\'t match');
 }
     if (firstname=='' || lastname=='' || email=='' || password=='')
 {
@@ -22,7 +22,7 @@ else{
         password:password
     };
 
-    fetch('http://localhost3000/userInfo',{
+    fetch('http://localhost:3000/userInfo',{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(userData),
