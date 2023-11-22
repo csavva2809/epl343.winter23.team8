@@ -9,26 +9,21 @@ function validateForm(){
 if(password!=confirmpassword){
     alert('passwords don\'t match');
 }
-    if (firstname=='' || lastname=='' || email=='' || password=='')
+    else if (firstname=='' || lastname=='' || email=='' || password=='')
 {
     alert('Please fill all the filds');
 }
-else{
+else
     alert('Sign up successful');
-    var userData={
-        firstname: firstname,
-        lastname: lastname,
-        email:email,
-        password:password
-    };
+
+var csvData = '${firstname},${lastname},${email},${password}\n';
 
     fetch('http://localhost:3000/usersInfo.csv',{
         method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify(userData),
+        headers:{'Content-Type':'taxt/csv'},
+        body: csvData,
     })
-.then(response => response.json())
-.then(data =>console.log(data))
-.catch(error => console.error('Error:',error))
-}
+.then(response => {console.log(response);})
+.catch(error => {console.error('Error:',error);
+});
 }
