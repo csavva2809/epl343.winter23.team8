@@ -142,12 +142,49 @@ html {
     line-height: 1.6;
     background-color: #f4f4f4;
 }
+
 .location-container {
     display: flex;
     align-items: center;
 }
 
+.location-image {
+    margin-right: 2px;
+    margin-bottom: 6.5px;
+    width: auto;
+    /* Adjust width as needed */
+    height: auto;
+    /* Adjust height as needed */
+}
 
+
+.gmail-container {
+    display: flex;
+    align-items: center;
+}
+
+.gmail-image {
+    margin-right: 2px;
+    margin-bottom: 6.5px;
+    width: auto;
+    /* Adjust width as needed */
+    height: auto;
+    /* Adjust height as needed */
+}
+
+.telephone-container {
+    display: flex;
+    align-items: center;
+}
+
+.telephone-image {
+    margin-right: 2px;
+    margin-bottom: 6.5px;
+    width: auto;
+    /* Adjust width as needed */
+    height: auto;
+    /* Adjust height as needed */
+}
 
 .container {
     max-width: 1200px;
@@ -170,53 +207,30 @@ header h1 {
 .tagline {
     color: #757575;
     margin-bottom: 1em;
-}
-
-.content-container {
+}.content-container {
     display: flex;
-    justify-content: space-between;
-    /* This will create space between the two columns */
-    align-items: flex-start;
-    /* This will align the items to the top */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: flex-start; /* Align children to the start of the main axis */
 }
 
+/* Individual container styles */
+.map-container,
 .about-info {
-    /* Make sure to limit the width of this container, otherwise it will take up 100% width */
-    width: 50%;
-    /* Adjust this as necessary */
+    width: 100%; /* Take full width */
+    margin-bottom: 20px; /* Add some space between the elements */
 }
 
-.map-container {
-    width: 50%;
-    /* Adjust this as necessary */
-    /* If you need to adjust the size of the map itself, you could add a max-width here */
-    max-width: 400px;
-    /* or any other value */
-}
-
-.map-container iframe {
-    width: 100%;
-    /* This will make the map take the full width of its container */
-    height: 300px;
-    /* Adjust height as needed */
-    border: none;
-}
-
-/* ... media queries ... */
-
-@media (max-width: 768px) {
+/* For larger screens, you may want to have a side-by-side layout */
+@media (min-width: 768px) {
     .content-container {
-        flex-direction: column;
+        flex-direction: row; /* Set children side by side */
+        justify-content: space-between; /* Add space between the children */
     }
 
-    .about-info,
-    .map-container {
-        width: 100%;
-        /* On smaller screens, make both containers full width */
-    }
-
-    .map-container {
-        order: -1;
-        /* This will move the map above the info on smaller screens */
+    .map-container,
+    .about-info {
+        width: 45%; /* Set to half of the container width */
+        margin-bottom: 0; /* Remove the margin between the elements */
     }
 }
