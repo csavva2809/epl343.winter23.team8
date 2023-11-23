@@ -27,5 +27,112 @@
         </a>
     </section>
 
+    <section id="product-detail">
+        <div class="product-image">
+            <img id="productImage" src="" alt="">
+        </div>
+        <div class="product-info">
+            <h1 id="productName"></h1>
+            <p id="productDescription" class="description"></p>
+            <p id="productPrice" class="price"></p>
+            <button class="btn-add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+        </div>
+    </section>
+    <script>
+        // The product details object (could be retrieved from a server or local storage)
+        const productDetails = {
+            'little-something': {
+                name: 'A Little Something',
+                image: 'images/newborn/A little something.jpg',
+                description: 'A beautiful arrangement perfect for celebrating a new arrival.',
+                price: '78'
+            },
+            'cerise-bouquet': {
+                name: 'Colour Of Cerise Bouquet',
+                image: 'images/newborn/Colour Of Cerise Bouquet.jpg',
+                description: 'An amazing arrangement perfect for celebrating a new arrival.',
+                price: '28'
+            },
+            'cut-flowers':{
+                name: 'Colour Of Cerise Bouquet',
+                image: 'images/newborn/cut flowers.jpg',
+                description: 'An amazing arrangement perfect for celebrating a new arrival.',
+                price: '28'
+
+            },
+            'loveinpink':{
+                name: 'Colour Of Cerise Bouquet',
+                image: 'images/newborn/love in pink.jpg',
+                description: 'An amazing arrangement perfect for celebrating a new arrival.',
+                price: '28'
+
+            },
+            'welcome':{
+                name: 'Colour Of Cerise Bouquet',
+                image: 'images/newborn/welcome.jpg',
+                description: 'An amazing arrangement perfect for celebrating a new arrival.',
+                price: '28'
+
+            },
+            'roses':{
+                name: 'Colour Of Cerise Bouquet',
+                image: 'images/newborn/roses.jpg',
+                description: 'An amazing arrangement perfect for celebrating a new arrival.',
+                price: '28'
+
+            },
+            'sugar-rush':{
+                name: 'Colour Of Cerise Bouquet',
+                image: 'images/newborn/Sugar rush.jpg',
+                description: 'An amazing arrangement perfect for celebrating a new arrival.',
+                price: '28'
+
+            },
+            
+            'dreaming':{
+                name: 'Colour Of Cerise Bouquet',
+                image: 'images/newborn/Dreaming.jpg',
+                description: 'An amazing arrangement perfect for celebrating a new arrival.',
+                price: '28'
+
+            },
+            
+
+        };
+        
+        // Function to extract query parameters from the URL
+        function getQueryParams() {
+            var params = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                params[key] = value;
+            });
+            return params;
+        }
+        
+        // Function to update the product details on the page
+        function updateProductDetails() {
+            var params = getQueryParams();
+            if(params.product && productDetails[params.product]) {
+                var product = productDetails[params.product];
+                document.getElementById('productImage').src = product.image;
+                document.getElementById('productName').textContent = product.name;
+                document.getElementById('productDescription').textContent = product.description;
+                document.getElementById('productPrice').textContent = $${product.price};
+            } else {
+                // Handle case where product is not found or no product is specified
+                document.getElementById('productImage').src = 'path/to/default/image.jpg';
+                document.getElementById('productName').textContent = 'Product Not Found';
+                document.getElementById('productDescription').textContent = '';
+                document.getElementById('productPrice').textContent = '';
+            }
+        }
+        
+        // Call the update function on page load
+        document.addEventListener('DOMContentLoaded', updateProductDetails);
+        </script>    
+
+
+
 </body>
 </html>
