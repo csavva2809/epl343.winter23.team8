@@ -191,7 +191,9 @@ html {
     margin: auto;
     padding: 20px;
 }
-
+.paragraph-class {
+    font-size: 20px; /* Adjust the size as needed */
+}
 header {
     background-color: #fff;
     text-align: center;
