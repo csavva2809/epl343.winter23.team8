@@ -120,16 +120,13 @@
     margin-bottom: 30%;
     /* Keeps content centered vertically if needed */
     display: flex;
-    /* Use flexbox to lay out child spans */
     flex-direction: row;
-    /* Layout the spans in a row */
 }
 
 /* Basic styling */
 body {
     line-height: 0.5;
     padding: 10 10px 10px 10px;
-    /* Removed the top padding */
     background: #f4f4f4;
 }
 
@@ -137,7 +134,6 @@ body,
 html {
     line-height: 0.5;
     padding: 10 10px 10px 10px;
-    /* Removed the top padding */
     height: 100%;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -145,7 +141,7 @@ html {
 
 .location-container {
     display: flex;
-    align-items: center;
+    align-items:center;
 }
 
 .location-image {
@@ -181,9 +177,7 @@ html {
     margin-right: 2px;
     margin-bottom: 6.5px;
     width: auto;
-    /* Adjust width as needed */
     height: auto;
-    /* Adjust height as needed */
 }
 
 .container {
@@ -192,7 +186,7 @@ html {
     padding: 20px;
 }
 .paragraph-class {
-    font-size: 20px; /* Adjust the size as needed */
+    font-size: 20px; /* Adjust the size */
 }
 header {
     background-color: #fff;
@@ -201,38 +195,46 @@ header {
     margin-bottom: 20px;
 }
 
-header h1 {
-    color: #333;
-    margin-bottom: 0.5em;
-}
 
 .tagline {
-    color: #757575;
+    color: #413e3e;
     margin-bottom: 1em;
-}.content-container {
+}
+
+.content-container {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally */
-    justify-content: flex-start; /* Align children to the start of the main axis */
+    flex-direction: row; /* Align horizontally */
+    align-items: flex-start; /* Align to the start of the cross axis */
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
-/* Individual container styles */
-.map-container,
-.about-info {
-    width: 100%; /* Take full width */
-    margin-bottom: 20px; /* Add some space between the elements */
+.about-info,
+.map-container {
+    box-sizing: border-box; /* padding and borders in the width */
+    width: 10%; /* Assign half of the parent width to each */
+    padding: 5px; /* Adjust padding as necessary */
 }
 
-/* For larger screens, you may want to have a side-by-side layout */
+.map-container iframe {
+    width: 100%; 
+    height: 50%; 
+}
+
 @media (min-width: 768px) {
     .content-container {
-        flex-direction: row; /* Set children side by side */
-        justify-content: space-between; /* Add space between the children */
+        flex-direction: row; 
+        justify-content: space-between; /* Add space between*/
     }
 
-    .map-container,
     .about-info {
-        width: 45%; /* Set to half of the container width */
-        margin-bottom: 0; /* Remove the margin between the elements */
+        order: 1; /* The about-info will come first */
+        width: 90%; /* Adjust the width as needed */
+    }
+
+    .map-container {
+        order: 2; /* The map-container will come second */
+        width: 50%; /* Adjust the width as needed */
+        height: 100%;
+      
     }
 }
