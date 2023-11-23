@@ -34,5 +34,5 @@ updateTotal();
 
 document.querySelector('.checkout-button').addEventListener('click', () => {
     alert('Proceeding to checkout...');
-    // Here you can add more logic for the checkout process
 });
+

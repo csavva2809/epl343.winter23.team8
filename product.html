@@ -39,6 +39,8 @@
 
         </div>
     </section>
+
+
     <script>
         // The product details object (could be retrieved from a server or local storage)
         const productDetails = {
@@ -96,7 +98,7 @@
                 description: 'An amazing arrangement perfect for celebrating a new arrival.',
                 price: '28'
 
-            },
+            }
             
 
         };
@@ -118,7 +120,7 @@
                 document.getElementById('productImage').src = product.image;
                 document.getElementById('productName').textContent = product.name;
                 document.getElementById('productDescription').textContent = product.description;
-                document.getElementById('productPrice').textContent = $${product.price};
+                document.getElementById('productPrice').textContent = `$${product.price}`;
             } else {
                 // Handle case where product is not found or no product is specified
                 document.getElementById('productImage').src = 'path/to/default/image.jpg';
@@ -132,6 +134,43 @@
         document.addEventListener('DOMContentLoaded', updateProductDetails);
         </script>    
 
+<script>
+    // This function could be in a separate JS file if preferred
+    function addToCart() {
+        // Check if a cart array already exists in localStorage
+        let cart = localStorage.getItem('cart');
+        if (cart) {
+            cart = JSON.parse(cart);
+        } else {
+            cart = [];
+        }
+        
+        // Assuming you have product details in your productDetails object
+        const params = new URLSearchParams(window.location.search);
+        const productId = params.get('product');
+        const product = productDetails[productId];
+        
+        if (product) {
+            // Add the product to the cart array
+            cart.push(product);
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+            // Optionally, update cart count in the UI
+            alert(`${product.name} added to cart.`);
+        } else {
+            alert('Error: Product not found.');
+        }
+        
+        // Optional: Update UI to reflect item in cart
+        // This could involve displaying a cart count or updating a cart display section
+    }
+    
+    // Load product details on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        updateProductDetails();
+    });
+    </script>
+    
 
 
 </body>
