@@ -15,8 +15,8 @@ if(password!=confirmpassword){
 }
 else
     alert('Sign up successful');
-
-var csvData = '${firstname},${lastname},${email},${password}\n';
+usersInfo.push({username:email,password:password});
+const csvData = '${firstname},${lastname},${email},${password}\n';
 
     fetch('http://localhost:3000/usersInfo.csv',{
         method:'POST',
