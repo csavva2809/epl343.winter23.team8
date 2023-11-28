@@ -34,16 +34,22 @@ function attachEventListeners() {
     });
 }
 
+// Define a delivery fee
+const deliveryFee = 3.50;
+
 function updateTotal() {
     let total = 0;
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.forEach((item, index) => {
         const quantityInput = document.querySelector(`.product-quantity[data-index="${index}"]`);
         const quantity = quantityInput ? parseInt(quantityInput.value) : item.quantity;
-        total += item.price * quantity;
+        total = total + (item.price * quantity) + deliveryFee;
     });
+
     document.querySelector('.total-price').textContent = `$${total.toFixed(2)}`;
+    document.querySelector('.delivery-fee').textContent = `$${deliveryFee.toFixed(2)}`;
 }
+
 
 function removeItem(event) {
     const index = event.target.dataset.index;
@@ -71,3 +77,11 @@ function updateQuantity(event) {
 
 // Load cart items when the page loads
 document.addEventListener('DOMContentLoaded', loadCartItems);
+
+function proceedToCheckout() {
+   // Display an alert to the user
+   alert("Your order has been sent successfully!");
+   var messageElement = document.getElementById("checkoutMessage");
+   messageElement.innerHTML = "Your order has been sent successfully!";
+   messageElement.style.display = "block"; // Make the message visible
+}

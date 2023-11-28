@@ -85,7 +85,6 @@
 }
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -112,7 +111,7 @@ body {
 }
 
 .cart-items {
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #ffffff;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
@@ -163,8 +162,35 @@ body {
     padding: 10px 0;
 }
 
+.delivery-fee{
+    font-size: 1.0em;
+    font-weight: bold;
+
+}
+
+/* Style the labels for form sections */
+.form-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    width: 20%; /* adjust as needed */
+    text-align: left; /* ensure text is aligned to the left */
+    margin-right: 10px; /* add some space between label and input */
+  }
+  
+  /* Style the input fields */
+  .form-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
 .total-price {
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: bold;
 }
 
