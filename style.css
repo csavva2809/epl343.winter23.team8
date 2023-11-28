@@ -273,18 +273,18 @@
     gap:1.5rem;
 }
 .footer .box-container .box{
-    flex:1 1 25rem;
+    flex:1 0 5rem;
 }
 .footer .box-container .box h3{
     colour:#333;
-    font-size:2.5rem;
-    padding:1rem 0;
+    font-size:1.5rem;
+    padding:10rem 10;
 }
 .footer .box-container .box a{
     display:block;
     colour:#666;
-    font-size:1.5rem;
-    padding:1rem 0;
+    font-size:0.8rem;
+    padding:0.5rem 0;
 }
 .footer .box-container .box a:hover{
     colour:var(--pink);
@@ -293,12 +293,12 @@
 }
 .footer .credit{
     text-align: center;
-    padding:1.5rem;
-    margin-top:1.5rem;
-    padding-top:2.5rem;
-    front-size: 2rem;
+    padding:0.5rem;
+    margin-top:0.5rem;
+    padding-top:0.5rem;
+    front-size: 1rem;
     color:#333;
-    border-top:.1rem sollid rgba(0,0,0,.1);
+    border-top:0.5rem sollid rgba(0,0,0,.1);
 
 }
 
