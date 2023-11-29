@@ -206,6 +206,29 @@
     transform: scale(1.05); /* Slightly enlarges the image on hover */
 }
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.paragraph-class {
+    font-size: 20px; /* Adjust the size */
+}
+header {
+    background-color:rgb(156, 150, 154);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.tagline {
+    color: #413e3e;
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+
+}
+
 
 #product1{
     text-align: center;
