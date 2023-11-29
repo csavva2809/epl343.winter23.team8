@@ -134,7 +134,7 @@
         function updateCartCount() {
             let cart = localStorage.getItem('cart');
             cart = cart ? JSON.parse(cart) : [];
-            let count = cart.length+cart.updateCartCount;
+            let count = (cart.length)+(cart.updateCartCount);
             document.getElementById('cartCount').textContent = count;
         }
     
