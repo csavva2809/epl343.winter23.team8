@@ -39,7 +39,8 @@
                     <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
                     <button type='button' onclick='register()' class='toggle-btn'>Register</button>
                 </div>
-                <form id='login' class='input-group-login'>
+                
+                <form id='login' class='input-group-login' action>
                     <input type='text' class='input-field' placeholder='Email Id' required>
                     <input type='password' class='input-field' placeholder='Enter Password' required>
                     <input type='checkbox' class='check-box'><span>Remember Password</span>
@@ -47,7 +48,7 @@
 
                 </form>
 
-                <form id='register' class='input-group-register' action='registration.php' method='post'>
+                <form id='register' class='input-group-register' action='registration.php' method='POST'>
                     <input type='text' name='firstName' class='input-field' placeholder='First Name' required>
                     <input type='text' name='lastName' class='input-field' placeholder='Last Name' required>
                     <input type='email' name='email' class='input-field' placeholder='Email Id' required>
