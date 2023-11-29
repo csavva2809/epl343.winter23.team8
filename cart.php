@@ -12,40 +12,40 @@
 <body>
 
     <body>
-    <section id="header">
-    <a href="website.php">
-            <img src="images/transparent_logoanthemio2.png" class="logo" height="82" width="240" alt="Home">
-        </a>
+        <section id="header">
+            <a href="website.php">
+                <img src="images/transparent_logoanthemio2.png" class="logo" height="82" width="240" alt="Home">
+            </a>
             <div>
                 <nav id="navbar">
-                    <li><a  href="website.php">Home</a></li>
+                    <li><a href="website.php">Home</a></li>
                     <li><a href="about.php">About</a></li>
 
                     <li><a class="active" href="cart.php"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
                                 height="20" width="35" class="cart">
-                                <span id="cartCount">0</span></a></li>
+                            <span id="cartCount">0</span></a></li>
                     <li><a class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
             </div>
-        </a>
+            </a>
 
-        </a>
-    </section>
-        
-   
+            </a>
+        </section>
+
+
 
         <section id="cart-page">
             <div class="container">
                 <header>
-                    <p style ="font-size: 40px;"><b></b>Anthemio FlowerShop</b></p>
+                    <p style="font-size: 40px;"><b></b>Anthemio FlowerShop</b></p>
                     <br>
                     <br>
                     <br>
                     <p class="tagline">BAG</p>
                 </header>
-                </div>
+            </div>
             <!-- Cart Items -->
             <div class="cart-items">
                 <!-- Cart Items -->
@@ -95,7 +95,7 @@
                             <span id="phone-number-error" class="error-message"></span>
                         </div>
 
-                       
+
 
                         <div class="form-section">
                             <label for="note">Note:
@@ -115,7 +115,7 @@
                         <span class="delivery-fee"></span>
                     </form>
 
-                    <br> 
+                    <br>
                     <br>
 
                     <div>
@@ -131,47 +131,46 @@
             </div>
         </section>
 
+
         <!-- footer section starts -->
+        <!-- footer section starts -->
+        <!-- footer section starts -->
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+
+                    <nav id="quicklinks">
+                        <h3>Quick links</h3>
+                        <li><a class="active" href="website.php">Home</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="cart.php">My Cart</a></li>
+                    </nav>
+
+
+                </div>
+
+                <div class="box">
+                    <h3>Delivery</h3>
+                    <a>Nicosia</a>
+                    <a>Limmasol</a>
+                    <a>Paphos</a>
+                    <a>Larnaca</a>
+
+                </div>
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a>Telephone: +357 225 14415 / 00357 99 64 3392</a>
+                    <a href="mailto:rentheo@gmail.com" class="email-button">E-mail: rentheo@gmail.com
+                    </a>
+
+                    <a href="https://www.instagram.com/anthemioflowershop/?hl=el">Instagram: anthemioflowershop</a>
+                    <a href="https://www.facebook.com/anthemioflowershop/">Facebook: Anthemio Flowershop</a>
+
+                </div>
+            </div>
         </section>
-    <!-- footer section starts -->
-    <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-
-
-
-                <nav id="quicklinks">
-                    <h3>Quick links</h3>
-                    <li><a class="active" href="website.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="cart.php">My Cart</a></li>
-                </nav>
-
-
-
-            </div>
-
-            <div class="box">
-                <h3>Delivery</h3>
-                <a>Nicosia</a>
-                <a>Limmasol</a>
-                <a>Paphos</a>
-                <a>Larnaca</a>
-
-            </div>
-            <div class="box">
-                <h3>Contact Info</h3>
-                <a>Telephone: +357 225 14415 / 00357 99 64 3392</a>
-                <a href="mailto:rentheo@gmail.com" class="email-button">E-mail: rentheo@gmail.com
-                </a>
-
-                <a href="https://www.instagram.com/anthemioflowershop/?hl=el">Instagram: anthemioflowershop</a>
-                <a href="https://www.facebook.com/anthemioflowershop/">Facebook: Anthemio Flowershop</a>
-
-            </div>
-    </section>
 
         <script src="path/to/common.js"></script>
         <script src="cart.js"></script> <!-- Link to your JavaScript file -->
