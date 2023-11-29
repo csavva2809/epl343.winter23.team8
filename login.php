@@ -1,12 +1,10 @@
 <?php
-session_start();  // Starting a session for user login
-
 // Handle Registration
 if (isset($_POST['register'])) {
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $password = $_POST['password'];
 
     $conn = new mysqli("localhost", "root", "", "anthemioflowershop");
 
@@ -21,43 +19,29 @@ if (isset($_POST['register'])) {
         $conn->close();
     }
 }
-
-// Handle Login
-// Handle Login
-if (isset($_POST['login'])) {
-    $email = strtolower($_POST['email']);  // Normalize email to lowercase
-    $password = $_POST['password'];
-
-    $conn = new mysqli("localhost", "root", "", "anthemioflowershop");
-
-    if ($conn->connect_error) {
-        die('Connection Failed: ' . $conn->connect_error);
-    } else {
-        $stmt = $conn->prepare("SELECT * FROM userinfo WHERE email = ?");
-        $stmt->bind_param("s", $email);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        if ($user = $result->fetch_assoc()) {
-            // Verify the password
-            if (password_verify($password, $user['password'])) {
-                // Password is correct, set session variables
-                $_SESSION['user_id'] = $user['id'];
-                $_SESSION['user_email'] = $user['email'];
-                echo "Login Successful";
-                // Redirect to a different page or perform other actions
-            } else {
-                echo "Invalid Email or Password (Password mismatch)";
-            }
-        } else {
-            echo "Invalid Email or Password (User not found)";
-        }
-        $stmt->close();
-        $conn->close();
-    }
-}
-
 ?>
 
+<?php 
+    if(isset($_POST['login'])){
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $conn = new mysqli("localhost", "root", "", "anthemioflowershop");
+
+        $sql = "select * from userinfo where email = '$email' and password = '$password'";
+        $result = mysqli_query($conn, $sql);  
+        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+        $count = mysqli_num_rows($result);  
+        if($count == 1){  
+            echo "login Successfully";
+        }  
+        else{  
+            echo  "invalid login information";
+        }     
+
+
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
