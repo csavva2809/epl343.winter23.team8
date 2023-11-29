@@ -31,13 +31,11 @@
     text-decoration: none;
     /*remove theunderlines from the list*/
     font-size: 21px;
-    font-size: 600;
+    
     color: black;
     transition: 0.3s ease;
     /*smooth the selection bar*/
 }
-
-
 
 #navbar li a:hover,
 #navbar li a.active {
@@ -62,13 +60,15 @@
 #navbar li a:hover::after {
     transform: scaleX(1);
     content: "";
-    width: 55%;
+    width: 60%;
     height: 2px;
     background: rgb(204, 199, 199);
     position: absolute;
     bottom: -4px;
     left: 20px
 }
+
+
 
 #navbar li .btnLogin {
     background: transparent;
