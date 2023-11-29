@@ -134,8 +134,13 @@
         function updateCartCount() {
             let cart = localStorage.getItem('cart');
             cart = cart ? JSON.parse(cart) : [];
-            let count = (cart.length)+(cart.updateCartCount);
-            document.getElementById('cartCount').textContent = count;
+            // Calculate the total quantity
+            let totalQuantity=0;
+            for(const cartCount of cart) {
+                totalQuantity = totalQuantity+ cart.length||1;
+            }
+           // let count = cart.length;
+            document.getElementById('cartCount').textContent = totalQuantity;
         }
     
         // Add this to call updateCartCount on page load
