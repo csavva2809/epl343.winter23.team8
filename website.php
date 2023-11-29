@@ -11,8 +11,9 @@
 
 <body>
     <section id="header">
-        <a href="http://127.0.0.1:5500/website.php">
-            <img src="images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
+    <a href="website.php">
+            <img src="images/transparent_logoanthemio2.png" class="logo" height="82" width="240" alt="Home">
+        </a>
             <div>
                 <nav id="navbar">
                     <li><a class="active" href="website.php">Home</a></li>
@@ -28,7 +29,7 @@
             </div>
         </a>
 
-
+        </a>
     </section>
 
     <section id="hero">
