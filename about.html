@@ -16,12 +16,13 @@
             <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
             <div>
                 <nav id="navbar">
-                    <li><a class="active" href="website.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="website.html">Home</a></li>
+                    <li><a class="active" href="about.html">About</a></li>
 
                     <li><a href="cart.html"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
-                                height="20" width="35" class="cart"></a></li>
+                                height="20" width="35" class="cart">
+                                <span id="cartCount">0</span></a></li>
                     <li><a class="buttonlogin" href="login.html"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
@@ -42,17 +43,16 @@
 
     <div class="container">
         <header>
-            <p style ="font-size: 34px;"><b></b>Anthemio Flowershop</b></p>
+            <p style ="font-size: 40px;"><b></b>Anthemio Flowershop</b></p>
             <p class="tagline">Send stunning flowers from independent florists in Nicosia.</p>
         </header>
 
         <section class="about-details">
             <p style="font-size: 20px;">Anthemio Flowershop in Nicosia is your trusted choice for beautiful flower
                 arrangements and personalized delivery services. With our partnership, you are
-                guaranteed excellent service and the freshest of blooms. We cater to Nicosia and surrounding areas. For
+                guaranteed excellent service and the freshest of blooms. We cater to Nicosia, Limmasol, Paphos, Larnaca and surrounding areas. For
                 same-day delivery, please place your order before 12pm.</p>
 
-                
 
                 <div class="content-container">
                     <!-- About Info Container -->
@@ -90,9 +90,65 @@
             </div>
 
     </div>
+
+    <!-- footer section starts -->
+    <section class="footer">
+
+        <div class="box-container">
+            
+            <div class="box">
+                
+                <h3>Quick links </h3>
+              
+                <a href="http://127.0.0.1:5500/website.html">Home</a>
+                <a href="http://127.0.0.1:5500/about.html">About</a>
+                <a href="http://127.0.0.1:5500/cart.html">My cart</a>
+            </div>
+    
+            <div class="box">
+                <h3>Delivery</h3>
+                <a>Nicosia</a>
+                <a>Limmasol</a>
+                <a>Paphos</a>
+                <a>Larnaca</a>
+    
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a>Telephone: +357 225 14415 / 00357 99 64 3392</a>
+                <a href="mailto:rentheo@gmail.com" class="email-button">E-mail: rentheo@gmail.com
+                </a>
+    
+                <a href="https://www.instagram.com/anthemioflowershop/?hl=el">Instagram: anthemioflowershop</a>
+                <a href="https://www.facebook.com/anthemioflowershop/">Facebook: Anthemio Flowershop</a>
+    
+            </div>
+    
+    
+            <div class="des">
+    
+    
+            </div>
     </section>
+    <script>
+        function updateCartCount() {
+            let cart = localStorage.getItem('cart');
+            cart = cart ? JSON.parse(cart) : [];
+            let count = cart.length;
+            document.getElementById('cartCount').textContent = count;
+        }
+    
+        // Add this to call updateCartCount on page load
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>   
+
+<script src="path/to/common.js"></script>
+
     </div>
     </div>
+
+ 
+
 
 </body>
 

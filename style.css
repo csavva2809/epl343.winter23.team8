@@ -256,6 +256,14 @@
     
 }
 
+#cartCount {
+    font-size: 15px; /* Adjust the font size as needed */
+    vertical-align: bottom; /* Align to the top of the line */
+    margin-left: 0.5px; /* Add some space from the cart icon */
+    color: rgb(0, 0, 0); /* Change color if needed */
+    /* Additional styling as needed */
+}
+
 
 /* Utilize media queries to adjust for smaller screens */
 @media (max-width: 768px) {
@@ -271,14 +279,11 @@
 }
 .footer {
     background-image: url("images/footer/trns.png");
-    margin-top: 200px;
+    margin-top: 100px;
     background-color: #b3a7a7; /* Your chosen background color */
     padding: 0.1rem; /* Adjust the padding as needed */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
-
-
-
 
 
 .footer .box-container {
