@@ -10,11 +10,15 @@
     /*I want the top tool bar to stay the whole time in the users view*/
     position: sticky;
     top: 0;
+
     left: 0;
+ 
+
 }
 
 #navbar {
     display: flex;
+    
     align-items: center;
     justify-content: center;
     /* Home Shop Blog About contact at the same line*/
@@ -30,7 +34,7 @@
 #navbar li a {
     text-decoration: none;
     /*remove theunderlines from the list*/
-    font-size: 16.5px;
+    font-size: 21px;
     font-size: 600;
     color: black;
     transition: 0.3s ease;
@@ -72,8 +76,8 @@
 
 #navbar li .btnLogin {
     background: transparent;
-    width: 60px;
-    height: 30px;
+    width: 69px;
+    height: 37px;
     border: 2px solid #fff;
     outline: none;
     border-radius: 6px;

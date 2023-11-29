@@ -27,7 +27,7 @@
 
 #navbar li a{
     text-decoration: none;/*remove theunderlines from the list*/
-    font-size: 16.5px;
+    font-size: 21px;
     font-size: 600;
     color: black;
     transition: 0.3s ease; /*smooth the selection bar*/
@@ -66,8 +66,8 @@
 
 #navbar li .btnLogin{
     background: transparent;
-    width: 60px;
-    height: 30px;
+    width: 69px;
+    height: 37px;
     border: 2px solid #fff;
     outline: none;
     border-radius: 6px;
