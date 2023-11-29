@@ -334,6 +334,7 @@ header {
 
 }
 
+
 #cartCount {
     font-size: 15px;
     /* Adjust the font size as needed */
@@ -412,11 +413,15 @@ header {
     padding: 0.5rem;
     text-decoration: wavy;
     /* Remove underline */
+    cursor: pointer; /* This will change the cursor to the 'pointer' hand when you hover over the link */
+
 }
 
 .footer .box-container .box a:hover {
     color: var(--pink);
     text-decoration: dotted;
+    
+    
 }
 
 .footer .credit {
@@ -427,3 +432,18 @@ header {
     font-size: 1rem;
     color: #333;
 }
+#quicklinks li {
+    list-style: none;
+    /*remove the bullet point from the list*/
+    padding: 0 20px;
+    position: relative;
+}
+
+#quicklinks li a {
+    text-decoration: none;
+    font-size: 1,2em;
+    /* Use ems for scalability */
+    color: black;
+}
+
+
