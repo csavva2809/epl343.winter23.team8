@@ -137,7 +137,7 @@
             // Calculate the total quantity
             let totalQuantity=0;
             for(const item of cart.length) {
-                totalQuantity += item.quantity || 1; // Add the quantity of each item or 1 if it's not set
+                totalQuantity +=(cart.length + (item.quantity || 1))-1; // Add the quantity of each item or 1 if it's not set
 
             }
            // let count = cart.length;
