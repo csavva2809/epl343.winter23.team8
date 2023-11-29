@@ -13,19 +13,19 @@
 
     <body>
         <section id="header">
-            <a href="http://127.0.0.1:5500/website.html">
+            <a href="http://127.0.0.1:5500/website.php">
                 <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
                 <div>
                     <nav id="navbar">
-                        <li><a href="website.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="website.php">Home</a></li>
+                        <li><a href="about.php">About</a></li>
 
-                        <li><a class="active" href="cart.html"><img
+                        <li><a class="active" href="cart.php"><img
                                     src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
                                     height="20" width="35" class="cart">
                                 <span id="cartCount">0</span> <!-- This will display the cart count -->
                             </a></li>
-                        <li><a class="buttonlogin" href="login.html"><button class="btnLogin">Login</button></a></li>
+                        <li><a class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
                     </nav>
 
                 </div>
@@ -141,9 +141,9 @@
                 
                 <h3>Quick links </h3>
               
-                <a href="http://127.0.0.1:5500/website.html">Home</a>
-                <a href="http://127.0.0.1:5500/about.html">About</a>
-                <a href="http://127.0.0.1:5500/cart.html">My cart</a>
+                <a href="http://127.0.0.1:5500/website.php">Home</a>
+                <a href="http://127.0.0.1:5500/about.php">About</a>
+                <a href="http://127.0.0.1:5500/cart.php">My cart</a>
             </div>
     
             <div class="box">

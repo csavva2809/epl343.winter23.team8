@@ -9,17 +9,17 @@
 </head>
 <body>
     <section id="header">
-        <a href="http://127.0.0.1:5500/website.html">
+        <a href="http://127.0.0.1:5500/website.php">
             <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
             <div>
                 <nav id="navbar">
-                    <li><a class="active" href="website.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="website.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
 
-                    <li><a href="cart.html"><img
+                    <li><a href="cart.php"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
                                 height="20" width="35" class="cart"><span id="cartCount">0</span></a></li>
-                    <li><a class="buttonlogin" href="login.html"><button class="btnLogin">Login</button></a></li>
+                    <li><a class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
             </div>
@@ -33,7 +33,7 @@
 
     <div class="pro-container">
         <div class="pro">
-            <a href="product.html?product=little-something"><img src="images/newborn/A little something.jpg" alt="A little something"></a>
+            <a href="product.php?product=little-something"><img src="images/newborn/A little something.jpg" alt="A little something"></a>
 
             <div class="des">
                 <span>A Little Something</span>
@@ -53,7 +53,7 @@
         </div>
        
         <div class="pro">
-            <a href="product.html?product=cerise-bouquet"><img src="images/newborn/Colour Of Cerise Bouquet.jpg" alt="Colour Of Cerise Bouquet"></a>           
+            <a href="product.php?product=cerise-bouquet"><img src="images/newborn/Colour Of Cerise Bouquet.jpg" alt="Colour Of Cerise Bouquet"></a>           
              <div class="des">
                 <span>Colour Of Cerise Bouquet</span>
                 <div class="star">
@@ -69,7 +69,7 @@
 
 
         <div class="pro">
-            <a href="product.html?product=cut-flowers"><img src="images/newborn/cut flowers.jpg" alt="cut flowers"></a>
+            <a href="product.php?product=cut-flowers"><img src="images/newborn/cut flowers.jpg" alt="cut flowers"></a>
             <div class="des">
                 <span>Cut Flowers</span>
                 <div class="star">
@@ -86,7 +86,7 @@
 
 
        <div class="pro">
-    <a href="product.html?product=loveinpink"><img src="images/newborn/love in pink.jpg" alt="love in pink"></a>
+    <a href="product.php?product=loveinpink"><img src="images/newborn/love in pink.jpg" alt="love in pink"></a>
     <div class="des">
         <span>Love In Pink</span>
                 <div class="star">
@@ -102,7 +102,7 @@
 
 
         <div class="pro">
-            <a href="product.html?product=welcome"><img src="images/newborn/welcome.jpg" alt="welcome"></a>
+            <a href="product.php?product=welcome"><img src="images/newborn/welcome.jpg" alt="welcome"></a>
             <div class="des">
                 <span>Welcome</span>
                 <div class="star">
@@ -119,7 +119,7 @@
 
 
         <div class="pro">
-            <a href="product.html?product=roses"><img src="images/newborn/roses.jpg" alt="roses"></a>
+            <a href="product.php?product=roses"><img src="images/newborn/roses.jpg" alt="roses"></a>
             <div class="des">
                 <span>Roses</span>
                 <div class="star">
@@ -135,7 +135,7 @@
 
 
         <div class="pro">
-            <a href="product.html?product=sugar-rush"><img src="images/newborn/Sugar rush.jpg" alt="Sugar rush"></a>
+            <a href="product.php?product=sugar-rush"><img src="images/newborn/Sugar rush.jpg" alt="Sugar rush"></a>
             <div class="des">
                 <span>Sugar Rush</span>
                 <div class="star">
@@ -152,7 +152,7 @@
 
 
         <div class="pro">
-            <a href="product.html?product=dreaming"><img src="images//newborn/Dreaming.jpg" alt="Dreaming"></a>
+            <a href="product.php?product=dreaming"><img src="images//newborn/Dreaming.jpg" alt="Dreaming"></a>
             <div class="des">
                 <span>Dreaming</span>
                 <div class="star">

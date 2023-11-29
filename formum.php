@@ -9,17 +9,17 @@
 </head>
 <body>
     <section id="header">
-        <a href="http://127.0.0.1:5500/website.html">
+        <a href="http://127.0.0.1:5500/website.php">
             <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
             <div>
                 <nav id="navbar">
-                    <li><a class="active" href="website.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="website.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
 
-                    <li><a href="cart.html"><img
+                    <li><a href="cart.php"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
                                 height="20" width="35" class="cart"><span id="cartCount">0</span></a></li>
-                    <li><a class="buttonlogin" href="login.html"><button class="btnLogin">Login</button></a></li>
+                    <li><a class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
             </div>
@@ -32,7 +32,7 @@
 
         <div class="pro-container">
             <div class="pro">
-                <a href="product.html?product=Bliss"><img src="images/formum/bliss.jpg" alt="Bliss"></a>
+                <a href="product.php?product=Bliss"><img src="images/formum/bliss.jpg" alt="Bliss"></a>
     
                 <div class="des">
                     <span>Bliss</span>
@@ -52,7 +52,7 @@
             </div>
            
             <div class="pro">
-                <a href="product.html?product=Clouds-above"><img src="images/formum/clouds above.jpg" alt="Clouds-above"></a>           
+                <a href="product.php?product=Clouds-above"><img src="images/formum/clouds above.jpg" alt="Clouds-above"></a>           
                  <div class="des">
                     <span>Clouds Above</span>
                     <div class="star">
@@ -68,7 +68,7 @@
     
     
             <div class="pro">
-                <a href="product.html?product=Dozen"><img src="images/formum/dozen.jpg" alt="Dozen"></a>
+                <a href="product.php?product=Dozen"><img src="images/formum/dozen.jpg" alt="Dozen"></a>
                 <div class="des">
                     <span>Dozen</span>
                     <div class="star">
@@ -85,7 +85,7 @@
     
     
            <div class="pro">
-        <a href="product.html?product=Jade"><img src="images/formum/jade.jpg" alt="Jade"></a>
+        <a href="product.php?product=Jade"><img src="images/formum/jade.jpg" alt="Jade"></a>
         <div class="des">
             <span>Jade</span>
                     <div class="star">
@@ -101,7 +101,7 @@
     
     
             <div class="pro">
-                <a href="product.html?product=Secret-Wispers"><img src="images/formum/secret-wispers.jpg" alt="Secret-Wispers"></a>
+                <a href="product.php?product=Secret-Wispers"><img src="images/formum/secret-wispers.jpg" alt="Secret-Wispers"></a>
                 <div class="des">
                     <span>Secret Wispers</span>
                     <div class="star">
@@ -118,7 +118,7 @@
     
     
             <div class="pro">
-                <a href="product.html?product=Strawberries"><img src="images/formum/strawberries.jpg" alt="Strawberries"></a>
+                <a href="product.php?product=Strawberries"><img src="images/formum/strawberries.jpg" alt="Strawberries"></a>
                 <div class="des">
                     <span>Strawberries</span>
                     <div class="star">
@@ -134,7 +134,7 @@
     
     
             <div class="pro">
-                <a href="product.html?product=Vintage"><img src="images/formum/vintage.jpg" alt="Vintage"></a>
+                <a href="product.php?product=Vintage"><img src="images/formum/vintage.jpg" alt="Vintage"></a>
                 <div class="des">
                     <span>Vintage</span>
                     <div class="star">
@@ -151,7 +151,7 @@
     
     
             <div class="pro">
-                <a href="product.html?product=Candy"><img src="images/formum/candy.jpg" alt="Candy"></a>
+                <a href="product.php?product=Candy"><img src="images/formum/candy.jpg" alt="Candy"></a>
                 <div class="des">
                     <span>Candy</span>
                     <div class="star">

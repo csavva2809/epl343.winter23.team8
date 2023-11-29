@@ -11,18 +11,18 @@
 
 <body>
     <section id="header">
-        <a href="http://127.0.0.1:5500/website.html">
+        <a href="http://127.0.0.1:5500/website.php">
             <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
             <div>
                 <nav id="navbar">
-                    <li><a class="active" href="website.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="website.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
 
-                    <li><a href="cart.html"><img
+                    <li><a href="cart.php"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
                                 height="20" width="35" class="cart">
                                 <span id="cartCount">0</span></a></li>
-                    <li><a class="buttonlogin" href="login.html"><button class="btnLogin">Login</button></a></li>
+                    <li><a class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
             </div>
@@ -87,7 +87,7 @@
             </div>
         <div class="pro-container">
             <div class="pro">
-                <a href="newborn.html"><img src="images/icons/New Born.jpg" alt="New Born"></a>
+                <a href="newborn.php"><img src="images/icons/New Born.jpg" alt="New Born"></a>
 
                 <div class="des">
                     <span>New Born</span>
@@ -105,7 +105,7 @@
             </div>
 
             <div class="pro">
-                <a href="formum.html"><img src="images/icons/mum.jpg" alt="For Mum"></a>
+                <a href="formum.php"><img src="images/icons/mum.jpg" alt="For Mum"></a>
                 <div class="des">
                     <span>For Mum</span>
                     <!-- <h5>Cartoon Astronaut </h5> -->
@@ -122,7 +122,7 @@
 
 
             <div class="pro">
-                <a href="valentines.html"><img src="images/icons/valentine.jpg" alt="Valentine's Day"></a>
+                <a href="valentines.php"><img src="images/icons/valentine.jpg" alt="Valentine's Day"></a>
                 <div class="des">
                     <span>Valentine's Day</span>
                     <!-- <h5>Cartoon Astronaut </h5> -->
@@ -138,7 +138,7 @@
             </div>
 
             <div class="pro">
-                <a href="Christmas.html"><img src="images/icons/christmas.jpg" alt="Christmas"></a>
+                <a href="Christmas.php"><img src="images/icons/christmas.jpg" alt="Christmas"></a>
                 <div class="des">
 
                     <span>Christmas</span>
@@ -158,7 +158,7 @@
 
 
             <div class="pro">
-                <a href="anniversary.html"><img src="images/icons/engagement.jpg" alt="Anniversary"></a>
+                <a href="anniversary.php"><img src="images/icons/engagement.jpg" alt="Anniversary"></a>
                 <div class="des">
                     <span>Engagement</span>
                     <!-- <h5>Cartoon Astronaut </h5> -->
@@ -176,7 +176,7 @@
 
 
             <div class="pro">
-                <a href="graduation.html"><img src="images/icons/graduation.jpg" alt="Graduation"></a>
+                <a href="graduation.php"><img src="images/icons/graduation.jpg" alt="Graduation"></a>
                 <div class="des">
                     <span>Graduation</span>
                     <!-- <h5>Cartoon Astronaut </h5> -->
@@ -193,7 +193,7 @@
 
 
             <div class="pro">
-                <a href="thankyou.html"><img src="images/icons/thanks.jpg" alt="Thank you"></a>
+                <a href="thankyou.php"><img src="images/icons/thanks.jpg" alt="Thank you"></a>
                 <div class="des">
                     <span>Thank you</span>
                     <!-- <h5>Cartoon Astronaut </h5> -->
@@ -211,7 +211,7 @@
 
 
             <div class="pro">
-                <a href="plants.html"><img src="images/icons/plants.jpg" alt="Plants"></a>
+                <a href="plants.php"><img src="images/icons/plants.jpg" alt="Plants"></a>
                 <div class="des">
                     <span>Plants</span>
                     <!-- <h5>Cartoon Astronaut </h5> -->
@@ -229,7 +229,7 @@
 
 
             <div class="pro">
-                <a href="Funerals.html"><img src="images/icons/funeral.jpg" alt="Funerals"></a>
+                <a href="Funerals.php"><img src="images/icons/funeral.jpg" alt="Funerals"></a>
                 <div class="des">
                     <span>Funerals</span>
                     <!-- <h5>Cartoon Astronaut </h5> -->
@@ -246,7 +246,7 @@
 
 
             <div class="pro">
-                <a href="flower.html"><img src="images/icons/buquets.jpg" alt="flower"></a>
+                <a href="flower.php"><img src="images/icons/buquets.jpg" alt="flower"></a>
                 <div class="des">
                     <span>Flower Bouquet</span>
                     <!-- <h5>Cartoon Astronaut </h5> -->
@@ -262,7 +262,7 @@
             </div>
 
             <div class="pro">
-                <a href="Birthdays.html"><img src="images/icons/birthday.jpg" alt="Birthdays"></a>
+                <a href="Birthdays.php"><img src="images/icons/birthday.jpg" alt="Birthdays"></a>
                 <div class="des">
 
                     <span>Birthdays</span>
@@ -280,7 +280,7 @@
 
 
             <div class="pro">
-                <a href="Weddings.html"><img src="images/icons/wedding.jpg" alt="Weddings"></a>
+                <a href="Weddings.php"><img src="images/icons/wedding.jpg" alt="Weddings"></a>
                 <div class="des">
 
                     <span>Weddings</span>
@@ -308,9 +308,9 @@
             
             <h3>Quick links </h3>
           
-            <a href="http://127.0.0.1:5500/website.html">Home</a>
-            <a href="http://127.0.0.1:5500/about.html">About</a>
-            <a href="http://127.0.0.1:5500/cart.html">My cart</a>
+            <a href="http://127.0.0.1:5500/website.php">Home</a>
+            <a href="http://127.0.0.1:5500/about.php">About</a>
+            <a href="http://127.0.0.1:5500/cart.php">My cart</a>
         </div>
 
         <div class="box">
