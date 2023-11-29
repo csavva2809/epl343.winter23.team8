@@ -39,11 +39,17 @@
         <section id="cart-page">
             <div class="container">
                 <header>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <p style="font-size: 40px;"><b></b>Anthemio FlowerShop</b></p>
                     <br>
                     <br>
                     <br>
+                    <br>
                     <p class="tagline">BAG</p>
+                    <br>
                 </header>
             </div>
             <!-- Cart Items -->
