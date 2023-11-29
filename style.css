@@ -1,5 +1,5 @@
 /* header start*/
-#header{
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,39 +8,43 @@
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
     z-index: 999;
     /*I want the top tool bar to stay the whole time in the users view*/
-    position: sticky; 
+    position: sticky;
     top: 0;
-    font-size:21px ;
-    left:0;
+    font-size: 21px;
+    left: 0;
 }
 
-#navbar{
+#navbar {
     display: flex;
     align-items: center;
-    justify-content: center; /* Home Shop Blog About contact at the same line*/
+    justify-content: center;
+    /* Home Shop Blog About contact at the same line*/
 }
 
-#navbar li{
-    list-style: none; /*remove the bullet point from the list*/
+#navbar li {
+    list-style: none;
+    /*remove the bullet point from the list*/
     padding: 0 20px;
     position: relative;
 }
 
-#navbar li a{
+#navbar li a {
     text-decoration: none;
-    font-size: 1em; /* Use ems for scalability */
+    font-size: 1em;
+    /* Use ems for scalability */
     color: black;
     transition: 0.3s ease;
 }
 
 
 #navbar li a:hover,
-#navbar li a.active{ /*home link highlighted*/ 
-    color:floralwhite
+#navbar li a.active {
+    /*home link highlighted*/
+    color: floralwhite
 }
 
-#navbar a::after{
-    content:' ';
+#navbar a::after {
+    content: ' ';
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -51,19 +55,20 @@
     transition: transform .5s;
 }
 
-#navbar li a.active::after,/*when the user is in a specific page the page has to be highlighted*/
-#navbar li a:hover::after{ 
+#navbar li a.active::after,
+/*when the user is in a specific page the page has to be highlighted*/
+#navbar li a:hover::after {
     transform: scaleX(1);
     content: "";
     width: 55%;
     height: 2px;
     background: rgb(204, 199, 199);
-    position:absolute;
+    position: absolute;
     bottom: -4px;
     left: 20px
 }
 
-#navbar li .btnLogin{
+#navbar li .btnLogin {
     background: transparent;
     width: 69px;
     height: 37px;
@@ -75,44 +80,48 @@
     color: #fff;
     font-weight: 500;
     transition: .5s;
-   
+
 }
 
-#navbar li .btnLogin:hover{
+#navbar li .btnLogin:hover {
     background: #fff;
     color: black;
 }
 
 /* Basic styling */
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-#hero{
-    
+#hero {
+
     background-image: url(images/flower2.jpg);
     height: 90vh;
     width: 100%;
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    align-items:first baseline;
-    justify-content:center;
-    position: relative; /* Add position relative here */
-    padding-top: 5%; /* Adjust this value to move the text up */
+    align-items: first baseline;
+    justify-content: center;
+    position: relative;
+    /* Add position relative here */
+    padding-top: 5%;
+    /* Adjust this value to move the text up */
 
 }
 
 #hero h1 {
     font-size: 5rem;
-    
+
     color: rgb(97, 75, 87);
-    top:30px; /* Adjust this value to move the text up or down */
-    left: 50%; /* Start at the center */
-  
+    top: 30px;
+    /* Adjust this value to move the text up or down */
+    left: 50%;
+    /* Start at the center */
+
 }
 
 
@@ -121,67 +130,97 @@
     font-size: 3rem;
     color: rgb(45, 34, 40);
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust the positioning to center the element */
-    display: flex;
-    align-items: center; /* This will take effect if there are multiple lines or elements inside h2 */
-    justify-content: center;
-  
-}
-#feature{
-    
-    position: absolute; /* Position the feature section absolutely */
-    bottom: 0; /* Position it at the bottom of the hero section */
-    left: 0;
-    width: 100%; /* Span the entire width of the hero section */
-    
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust the positioning to center the element */
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the items horizontally */
+    /* This will take effect if there are multiple lines or elements inside h2 */
+    justify-content: center;
+
+}
+
+#feature {
+
+    position: absolute;
+    /* Position the feature section absolutely */
+    bottom: 0;
+    /* Position it at the bottom of the hero section */
+    left: 0;
+    width: 100%;
+    /* Span the entire width of the hero section */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the items horizontally */
     flex-wrap: wrap;
-    padding: 20px; /* Add some padding */
-    padding-bottom: 40px; /* Add padding to bottom to push content up */
+    padding: 20px;
+    /* Add some padding */
+    padding-bottom: 40px;
+    /* Add padding to bottom to push content up */
 
 }
 
 #feature .featureBox {
-    flex: 1; /* Allow the boxes to grow and shrink */
-    padding: 2em; /* Use ems for scalability */
-    margin: 1em; /* Relative units for margins */
+    flex: 1;
+    /* Allow the boxes to grow and shrink */
+    padding: 2em;
+    /* Use ems for scalability */
+    margin: 1em;
+    /* Relative units for margins */
 
-    width: 40%; /* Fixed width */
-    height: 10%; /* Fixed height */
+    width: 40%;
+    /* Fixed width */
+    height: 10%;
+    /* Fixed height */
     text-align: center;
-  
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border: none; /* Remove border */
-   
-    background-color: rgba(231, 226, 226, 0.618); /* Light background */
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    border: none;
+    /* Remove border */
+
+    background-color: rgba(231, 226, 226, 0.618);
+    /* Light background */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: box-shadow 0.2s ease; /* Smooth transition for hover effect */
+    transition: box-shadow 0.2s ease;
+    /* Smooth transition for hover effect */
 }
 
 #feature .featureBox:hover {
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    /* More pronounced shadow on hover */
 }
 
 #feature .featureBox img {
-    width: auto; /* Maintain aspect ratio */
-    height: 10vh; /* Example size, adjust as needed */
-    margin-bottom:0.5em; /* Space between image and title */
+    width: auto;
+    /* Maintain aspect ratio */
+    height: 10vh;
+    /* Example size, adjust as needed */
+    margin-bottom: 0.5em;
+    /* Space between image and title */
 }
 
 #feature .featureBox h4 {
-    font-size: 1rem; /* Adjust font size as needed */
-    color: #333; /* Darker text color for contrast */
-    margin-top: 10px; /* Space above title */
-    padding: 5px 10px; /* Padding inside title */
-    background-color: transparent; /* No background for title */
-    border-radius: 5px; /* Slight rounding on corners */
+    font-size: 1rem;
+    /* Adjust font size as needed */
+    color: #333;
+    /* Darker text color for contrast */
+    margin-top: 10px;
+    /* Space above title */
+    padding: 5px 10px;
+    /* Padding inside title */
+    background-color: transparent;
+    /* No background for title */
+    border-radius: 5px;
+    /* Slight rounding on corners */
 }
 
 .pro button {
@@ -198,69 +237,112 @@
 .pro img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Optional: for rounded corners */
-    transition: transform 0.2s ease; /* Smooth transition effect */
+    border-radius: 10px;
+    /* Optional: for rounded corners */
+    transition: transform 0.2s ease;
+    /* Smooth transition effect */
 }
 
 .pro button:hover img {
-    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    transform: scale(1.05);
+    /* Slightly enlarges the image on hover */
+}
+
+.container {
+    max-width: 100%;
+    margin-top: 24px;
+    padding: 29px;
+    color: #444444;
+
+}
+
+.paragraph-class {
+    font-size: 2px;
+    /* Adjust the size */
+}
+
+header {
+    background-color: rgba(233, 208, 208, 0.977);
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 0px;
 }
 
 
-#product1{
+.tagline {
+    color: #413e40;
+    margin-bottom: 1em;
+    font-size: 1.8rem;
+
+}
+
+
+#product1 {
     text-align: center;
 }
-#product1 .pro-container{
+
+#product1 .pro-container {
     display: flex;
-    justify-content :space-between;
+    justify-content: space-between;
     padding-top: 20px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 #product1 .pro {
-    flex: 1 1 calc(25% - 30px); /* Grow to fill space, but not more than 25% - margin */
-    margin: 15px; /* Keep a consistent margin */
-    padding: 0em; /* Padding based on parent font-size */
+    flex: 1 1 calc(25% - 30px);
+    /* Grow to fill space, but not more than 25% - margin */
+    margin: 15px;
+    /* Keep a consistent margin */
+    padding: 0em;
+    /* Padding based on parent font-size */
     width: 23%;
     min-width: 250 px;
     border: 3.5pt solid#b7bab9;
-    border-radius:21px;
+    border-radius: 21px;
     cursor: pointer;
-    box-shadow:  10px 10px 10px rgba(0,0,0,0.4);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     transition: 0.2s ease;
 }
-#product1 .pro:hover{
-    box-shadow:  20px 20px 30px rgba(0,0,0,0.06);
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 
 }
-#product1 .pro img{
-    width:100%;
+
+#product1 .pro img {
+    width: 100%;
     height: auto;
-    border-radius:20px;
+    border-radius: 20px;
 
 }
-#product1 .pro .des{
+
+#product1 .pro .des {
     text-align: center;
     padding: 10px 0;
     margin-bottom: 25px;
     font-size: 30px;
 }
-#product1 .pro .des span{
+
+#product1 .pro .des span {
     color: #606063;
-   
+
 }
 
-#product1 .pro .des h5{
+#product1 .pro .des h5 {
     padding-top: 7px;
     color: #1a1a1a;
-    
+
 }
 
 #cartCount {
-    font-size: 15px; /* Adjust the font size as needed */
-    vertical-align: bottom; /* Align to the top of the line */
-    margin-left: 0.5px; /* Add some space from the cart icon */
-    color: rgb(0, 0, 0); /* Change color if needed */
+    font-size: 15px;
+    /* Adjust the font size as needed */
+    vertical-align: bottom;
+    /* Align to the top of the line */
+    margin-left: 0.5px;
+    /* Add some space from the cart icon */
+    color: rgb(0, 0, 0);
+    /* Change color if needed */
     /* Additional styling as needed */
 }
 
@@ -268,52 +350,68 @@
 /* Utilize media queries to adjust for smaller screens */
 @media (max-width: 768px) {
     #product1 .pro {
-        flex-basis: calc(50% - 30px); /* Adjust to 50% for smaller screens */
+        flex-basis: calc(50% - 30px);
+        /* Adjust to 50% for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     #product1 .pro {
-        flex-basis: 100%; /* Stack on very small screens */
+        flex-basis: 100%;
+        /* Stack on very small screens */
     }
 }
+
 .footer {
     background-image: url("images/footer/trns.png");
     margin-top: 100px;
-    background-color: #b3a7a7; /* Your chosen background color */
-    padding: 0.1rem; /* Adjust the padding as needed */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #b3a7a7;
+    /* Your chosen background color */
+    padding: 0.1rem;
+    /* Adjust the padding as needed */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
 }
 
 
 .footer .box-container {
     display: flex;
     margin-left: 50px;
-    justify-content: space-around; /* This will distribute space around the items */
-    align-items:normal; /* Align items to the start of the cross axis */
-    flex-wrap: wrap; /* Allows items to wrap if needed */
+    justify-content: space-around;
+    /* This will distribute space around the items */
+    align-items: normal;
+    /* Align items to the start of the cross axis */
+    flex-wrap: wrap;
+    /* Allows items to wrap if needed */
 }
 
 .footer .box-container .box {
-    
-    flex: 1; /* Allows the box to grow */
-    min-width: 10%; /* Minimum width for each box */
-    box-sizing: border-box; /* Include padding and border */
-    padding: 2rem; /* Padding inside each box */
-   
+
+    flex: 1;
+    /* Allows the box to grow */
+    min-width: 10%;
+    /* Minimum width for each box */
+    box-sizing: border-box;
+    /* Include padding and border */
+    padding: 2rem;
+    /* Padding inside each box */
+
 }
+
 .footer .box-container .box h3 {
     color: #333;
     font-size: 2.4rem;
-    margin-bottom: 1rem; /* Add some space below the heading */
+    margin-bottom: 1rem;
+    /* Add some space below the heading */
 }
 
 .footer .box-container .box a {
-    display:flow-root;
+    display: flow-root;
     color: rgb(0, 0, 0);
     font-size: 1.2rem;
-    padding: 0.5rem ;
-    text-decoration:wavy; /* Remove underline */
+    padding: 0.5rem;
+    text-decoration: wavy;
+    /* Remove underline */
 }
 
 .footer .box-container .box a:hover {

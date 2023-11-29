@@ -79,7 +79,12 @@
 
     </section>
     <section id="product1" class="section-p1">
-
+        <div class="container">
+            <header>
+                <p style ="font-size: 40px;"><b>Categories</b></b></p>
+      
+            </header>
+            </div>
         <div class="pro-container">
             <div class="pro">
                 <a href="newborn.html"><img src="images/icons/New Born.jpg" alt="New Born"></a>
@@ -335,8 +340,13 @@
 function updateCartCount() {
     let cart = localStorage.getItem('cart');
     cart = cart ? JSON.parse(cart) : [];
-    let count = cart.length;
-    document.getElementById('cartCount').textContent = count;
+     // Calculate the total quantity
+     let totalQuantity=0;
+            for(const item of cart) {
+                totalQuantity += (item.quantity || 1); // Add the quantity of each item 
+            }
+           // let count = cart.length;
+            document.getElementById('cartCount').textContent = totalQuantity;
 }
 
 // Initialize cart count on page load

@@ -76,16 +76,12 @@ function removeItem(event) {
     
     if (cart) {
         cart = JSON.parse(cart);
-
         // Remove the item at the specified index
         cart.splice(index, 1);
-
         // Update the cart in localStorage
         localStorage.setItem('cart', JSON.stringify(cart));
-
         // Update the cart count in the UI
         updateCartCount();
-
         // Reload the cart items to reflect the removal
         loadCartItems();
     }
@@ -173,4 +169,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, false);
 });
+
+
 
