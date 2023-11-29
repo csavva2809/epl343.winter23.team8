@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas - FlowerShop</title>
+    <title>Graduation - FlowerShop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section id="header">
-        <a href="http://127.0.0.1:5500/website.html">
+        <a href="http://127.0.0.1:5500/website.php">
             <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
             <div>
                 <nav id="navbar">
-                    <li><a class="active" href="website.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="website.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
 
-                    <li><a href="cart.html"><img
+                    <li><a href="cart.php"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
                                 height="20" width="35" class="cart"><span id="cartCount">0</span></a></li>
-                    <li><a class="buttonlogin" href="login.html"><button class="btnLogin">Login</button></a></li>
+                    <li><a class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
             </div>
@@ -33,29 +33,27 @@
 
     <div class="pro-container">
         <div class="pro">
-            <a href="product.html?product=Carol"><img src="images/christmas/A Christmas carol.jpg" alt="Carol"></a>
+            <a href="product.php?product=drops"><img src="images//graduation/Drops.jpg" alt="drops"></a>
 
             <div class="des">
-                <span>A Christmas Carol</span>
-                
-
+                <span>Pear Drops</span>
                 <div class="star">
-                    
+
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Carol"></button>
-                
+                <button class="btn-add-to-cart" data-product-id="drops">Add to cart</button>
+
             </div>
         </div>
-       
+
         <div class="pro">
-            <a href="product.html?product=Basket"><img src="images/christmas/basket_of_joy.jpg" alt="Basket"></a>           
-             <div class="des">
-                <span>Basket Of Joy</span>
+            <a href="product.php?product=scent"><img src="images/graduation/Scent.jpg" alt="scent"></a>
+            <div class="des">
+                <span>Aquatic Scent</span>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -63,15 +61,15 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Basket"></button>
+                <button class="btn-add-to-cart" data-product-id="scent"></button>
             </div>
         </div>
 
 
         <div class="pro">
-            <a href="product.html?product=Candle"><img src="images/christmas/candle_arrangement.jpg" alt="Candle"></a>
+            <a href="product.php?product=evelyn"><img src="images/graduation/evelyn.jpg" alt="evelyn"></a>
             <div class="des">
-                <span>Candle Arrangement</span>
+                <span>Evelyn</span>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -79,16 +77,14 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Candle"></button>
+                <button class="btn-add-to-cart" data-product-id="evelyn"></button>
             </div>
         </div>
 
-
-
         <div class="pro">
-            <a href="product.html?product=christmas_charm"><img src="images/christmas/Christmas Charm.jpg" alt="Christmas Charm"></a>           
+            <a href="product.php?product=secret"><img src="images/graduation/secret.jpg" alt="secret"></a>
             <div class="des">
-                <span>Christmas Charm</span>
+                <span>Secret Wispers</span>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -96,15 +92,15 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="christmas_charm"></button>
+                <button class="btn-add-to-cart" data-product-id="secret"></button>
             </div>
         </div>
 
 
         <div class="pro">
-            <a href="product.html?product=holiday_splendour"><img src="images/christmas/Holiday_splendour.jpg" alt="Holiday Splendour"></a>           
+            <a href="product.php?product=ruffles"><img src="images/graduation/ruffles.jpg " alt="ruffles"></a>
             <div class="des">
-                <span>Holiday Splendour</span>
+                <span>Roses & Ruffles</span>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -112,14 +108,14 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="holiday_splendour"></button>
+                <button class="btn-add-to-cart" data-product-id="ruffles"></button>
             </div>
         </div>
 
         <div class="pro">
-            <a href="product.html?product=jingle_bells"><img src="images/christmas/Jingle_Bells.jpg" alt="Jingle Bells"></a>           
+            <a href="product.php?product=jade"><img src="images/graduation/jade.jpg"alt="dreamland"></a>
             <div class="des">
-                <span>Jingle Bells</span>
+                <span>Jade</span>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -127,29 +123,14 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="jingle_bells"></button>
-            </div>
-        </div>
-        
-        <div class="pro">
-            <a href="product.html?product=joy"><img src="images/christmas/Joy.jpg" alt="Joy"></a>           
-            <div class="des">
-                <span>Joy</span>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <button class="btn-add-to-cart" data-product-id="joy"></button>
+                <button class="btn-add-to-cart" data-product-id="jade"></button>
             </div>
         </div>
 
         <div class="pro">
-            <a href="product.html?product=letter_to_santa"><img src="images/christmas/Letter to santa.jpg" alt="Letter to Santa"></a>           
+            <a href="product.php?product=bliss"><img src="images/graduation/bliss.jpg"alt="bliss"></a>
             <div class="des">
-                <span>Letter To Santa</span>
+                <span>Nature's Bliss</span>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -157,60 +138,14 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="letter_to_santa"></button>
-            </div>
-        </div>
-        
-        <div class="pro">
-            <a href="product.html?product=red_forest"><img src="images/christmas/Red_forest.jpg" alt="Red Forest"></a>           
-            <div class="des">
-                <span>Red Forest</span>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <button class="btn-add-to-cart" data-product-id="red_forest"></button>
-            </div>
-        </div>
-        
-        <div class="pro">
-            <a href="product.html?product=seasons_greetings"><img src="images/christmas/Seasons greetings.jpg" alt="Seasons Greetings"></a>           
-            <div class="des">
-                <span>Seasons Greetings</span>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <button class="btn-add-to-cart" data-product-id="seasons_greetings"></button>
-            </div>
-        </div>
-        
-        <div class="pro">
-            <a href="product.html?product=star_of_christmas"><img src="images/christmas/star of christmas.jpg" alt="Star of Christmas"></a>           
-            <div class="des">
-                <span>Star Of Christmas</span>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <button class="btn-add-to-cart" data-product-id="star_of_christmas"></button>
+                <button class="btn-add-to-cart" data-product-id="bliss"></button>
             </div>
         </div>
 
-        
         <div class="pro">
-            <a href="product.html?product=starlight"><img src="images/christmas/Starlight.jpg" alt="Starlight"></a>           
+            <a href="product.php?product=smooch"><img src="images/graduation/smooch.jpg" alt="smooch"></a>
             <div class="des">
-                <span>Starlight</span>
+                <span>Smooch</span>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -218,11 +153,70 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="starlight"></button>
+                <button class="btn-add-to-cart" data-product-id="smooch"></button>
             </div>
         </div>
 
-      
+
+        <div class="pro">
+            <a href="product.php?product=Ashleigh"><img src="images/graduation/Ashleigh.jpg" alt="Ashleigh"></a>
+            <div class="des">
+                <span>Ashleigh</span>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button class="btn-add-to-cart" data-product-id="Ashleigh"></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <a href="product.php?product=cream"><img src="images/graduation/cream.jpg" alt="cream"></a>
+            <div class="des">
+                <span>Strawberry & Cream</span>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button class="btn-add-to-cart" data-product-id="cream"></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <a href="product.php?product=above"><img src="images/graduation/above.jpg" alt="above"></a>
+            <div class="des">
+                <span>Clouds Above</span>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button class="btn-add-to-cart" data-product-id="above"></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <a href="product.php?product=dozen"><img src="images/graduation/dozen.jpg" alt="dozen"></a>
+            <div class="des">
+                <span>Dreamy Dozen</span>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button class="btn-add-to-cart" data-product-id="dozen"></button>
+            </div>
+        </div>
         <script>
 
             function updateCartCount() {
@@ -235,7 +229,6 @@
             // Initialize cart count on page load
             document.addEventListener('DOMContentLoaded', updateCartCount);
             </script>
-
 
 </body>
 </html>

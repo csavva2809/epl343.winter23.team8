@@ -9,17 +9,17 @@
 </head>
 <body>
     <section id="header">
-        <a href="http://127.0.0.1:5500/website.html">
+        <a href="http://127.0.0.1:5500/website.php">
             <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
             <div>
                 <nav id="navbar">
-                    <li><a class="active" href="website.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="website.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
 
-                    <li><a href="cart.html"><img
+                    <li><a href="cart.php"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
                                 height="20" width="35" class="cart"></a><span id="cartCount">0</span></li>
-                    <li><a class="buttonlogin" href="login.html"><button class="btnLogin">Login</button></a></li>
+                    <li><a class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
             </div>
@@ -32,7 +32,7 @@
 
     <div class="pro-container">
         <div class="pro">
-            <a href="product.html?product=bliss"><img src="images//flowerbuquet/bliss.jpg" alt="bliss"></a>
+            <a href="product.php?product=bliss"><img src="images//flowerbuquet/bliss.jpg" alt="bliss"></a>
 
             <div class="des">
                 <span>Bliss</span>
@@ -50,7 +50,7 @@
         </div>
 
         <div class="pro">
-            <a href="product.html?product=drops"><img src="images/flowerbuquet/drops.jpg" alt="drops"></a>
+            <a href="product.php?product=drops"><img src="images/flowerbuquet/drops.jpg" alt="drops"></a>
             <div class="des">
                 <span>Pear Drops</span>
                 <div class="star">
@@ -66,7 +66,7 @@
 
 
         <div class="pro">
-            <a href="product.html?product=felicity"><img src="images/flowerbuquet/felicity.jpg" alt="evelyn"></a>
+            <a href="product.php?product=felicity"><img src="images/flowerbuquet/felicity.jpg" alt="evelyn"></a>
             <div class="des">
                 <span>Felicity</span>
                 <div class="star">
@@ -81,7 +81,7 @@
         </div>
 
         <div class="pro">
-            <a href="product.html?product=vintage"><img src="images/flowerbuquet/vintage.jpg" alt="vintage"></a>
+            <a href="product.php?product=vintage"><img src="images/flowerbuquet/vintage.jpg" alt="vintage"></a>
             <div class="des">
                 <span>Vintage Buquet</span>
                 <div class="star">
@@ -96,7 +96,7 @@
         </div>
 
         <div class="pro">
-            <a href="product.html?product=jade"><img src="images/flowerbuquet/jade.jpg"alt="dreamland"></a>
+            <a href="product.php?product=jade"><img src="images/flowerbuquet/jade.jpg"alt="dreamland"></a>
             <div class="des">
                 <span>Jade</span>
                 <div class="star">
@@ -111,7 +111,7 @@
         </div>
 
         <div class="pro">
-            <a href="product.html?product=roses"><img src="images/flowerbuquet/roses.jpg " alt="roses"></a>
+            <a href="product.php?product=roses"><img src="images/flowerbuquet/roses.jpg " alt="roses"></a>
             <div class="des">
                 <span>Roses</span>
                 <div class="star">
@@ -128,7 +128,7 @@
    
 
         <div class="pro">
-            <a href="product.html?product=forever"><img src="images/flowerbuquet/forever.jpg"alt="forever"></a>
+            <a href="product.php?product=forever"><img src="images/flowerbuquet/forever.jpg"alt="forever"></a>
             <div class="des">
                 <span>Forever Yours</span>
                 <div class="star">
@@ -143,7 +143,7 @@
         </div>
 
         <div class="pro">
-            <a href="product.html?product=smooch"><img src="images/flowerbuquet/smooch.jpg" alt="smooch"></a>
+            <a href="product.php?product=smooch"><img src="images/flowerbuquet/smooch.jpg" alt="smooch"></a>
             <div class="des">
                 <span>Smooch</span>
                 <div class="star">
@@ -159,7 +159,7 @@
 
 
         <div class="pro">
-            <a href="product.html?product=Ashleigh"><img src="images/flowerbuquet/Ashleigh.jpg" alt="Ashleigh"></a>
+            <a href="product.php?product=Ashleigh"><img src="images/flowerbuquet/Ashleigh.jpg" alt="Ashleigh"></a>
             <div class="des">
                 <span>Ashleigh</span>
                 <div class="star">
@@ -174,7 +174,7 @@
         </div>
 
         <div class="pro">
-            <a href="product.html?product=warm"><img src="images/flowerbuquet/warm.jpg" alt="warm"></a>
+            <a href="product.php?product=warm"><img src="images/flowerbuquet/warm.jpg" alt="warm"></a>
             <div class="des">
                 <span>Warm Wishes</span>
                 <div class="star">
@@ -189,7 +189,7 @@
         </div>
 
         <div class="pro">
-            <a href="product.html?product=above"><img src="images/flowerbuquet/above.jpg" alt="above"></a>
+            <a href="product.php?product=above"><img src="images/flowerbuquet/above.jpg" alt="above"></a>
             <div class="des">
                 <span>Clouds Above</span>
                 <div class="star">
@@ -204,7 +204,7 @@
         </div>
 
         <div class="pro">
-            <a href="product.html?product=dozen"><img src="images/flowerbuquet/dozen.jpg" alt="dozen"></a>
+            <a href="product.php?product=dozen"><img src="images/flowerbuquet/dozen.jpg" alt="dozen"></a>
             <div class="des">
                 <span>Dreamy Dozen</span>
                 <div class="star">
