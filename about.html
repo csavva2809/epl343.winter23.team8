@@ -136,8 +136,9 @@
             cart = cart ? JSON.parse(cart) : [];
             // Calculate the total quantity
             let totalQuantity=0;
-            for(const cartCount of cart) {
-                totalQuantity = totalQuantity+ cart.length||1;
+            for(const item of cart.length) {
+                totalQuantity += item.quantity || 1; // Add the quantity of each item or 1 if it's not set
+
             }
            // let count = cart.length;
             document.getElementById('cartCount').textContent = totalQuantity;
