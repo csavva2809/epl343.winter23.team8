@@ -55,24 +55,26 @@ if (isset($_POST['register'])) {
 </head>
 
 <body>
-    <section id="header">
-        <a href="http://127.0.0.1:5500/website.php">
-            <img src="images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
+<section id="header">
+    <a href="website.php">
+            <img src="images/transparent_logoanthemio2.png" class="logo" height="82" width="240" alt="Home">
+        </a>
             <div>
                 <nav id="navbar">
-                    <li><a class="active" href="website.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
+                    <li><a  href="website.php">Home</a></li>
+                    <li><a  href="about.php">About</a></li>
 
                     <li><a href="cart.php"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
-                                height="20" width="35" class="cart"></a></li>
-                    <li><a class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
+                                height="20" width="35" class="cart">
+                                <span id="cartCount">0</span></a></li>
+                    <li><a class="active" class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
             </div>
         </a>
 
-
+        </a>
     </section>
 
     <div class="full-page">
@@ -106,6 +108,26 @@ if (isset($_POST['register'])) {
 
     </div>
     <script>
+        function updateCartCount() {
+            let cart = localStorage.getItem('cart');
+            cart = cart ? JSON.parse(cart) : [];
+            // Calculate the total quantity
+            let totalQuantity=0;
+            for(const item of cart) {
+                totalQuantity += (item.quantity || 1); // Add the quantity of each item 
+            }
+           // let count = cart.length;
+            document.getElementById('cartCount').textContent = totalQuantity;
+        }
+    
+        // Add this to call updateCartCount on page load
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>   
+
+<script src="path/to/common.js"></script>
+
+
+    <script>
         var x = document.getElementById('login');
         var y = document.getElementById('register');
         var z = document.getElementById('btn');
@@ -126,5 +148,7 @@ if (isset($_POST['register'])) {
             }
         }
     </script>
+
+
 
 </body>
