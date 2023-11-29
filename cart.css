@@ -27,7 +27,7 @@
 
 #navbar li a{
     text-decoration: none;/*remove theunderlines from the list*/
-    font-size: 16.5px;
+    font-size: 21px;
     font-size: 600;
     color: black;
     transition: 0.3s ease; /*smooth the selection bar*/
@@ -66,8 +66,8 @@
 
 #navbar li .btnLogin{
     background: transparent;
-    width: 60px;
-    height: 30px;
+    width: 69px;
+    height: 37px;
     border: 2px solid #fff;
     outline: none;
     border-radius: 6px;
@@ -83,7 +83,6 @@
     background: #fff;
     color: black;
 }
-
 
 
 * {
@@ -112,7 +111,7 @@ body {
 }
 
 .cart-items {
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #ffffff;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
@@ -163,8 +162,56 @@ body {
     padding: 10px 0;
 }
 
+.delivery-fee{
+    font-size: 1.0em;
+    font-weight: bold;
+
+}
+
+/* Style the labels for form sections */
+.form-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    width: 20%; /* adjust as needed */
+    text-align: left; /* ensure text is aligned to the left */
+    margin-right: 10px; /* add some space between label and input */
+  }
+  
+  /* Style the input fields */
+  .form-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.error-message {
+    color: red;
+    font-size: small;
+    display: none; /* Initially hidden */
+}
+
+.required-text {
+    display: block; /* Makes the text appear on a new line */
+    margin-top: 10px; /* Adds space above the text */
+    color: red;
+    font-size: small;
+
+}
+
+#payment-method {
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 5px 0; /* Add some padding for spacing */
+    margin-bottom: 10px; /* Additional spacing from the next form element */
+}
+
+
 .total-price {
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: bold;
 }
 
@@ -183,7 +230,93 @@ body {
     background: #4cae4c;
 }
 
-/* Responsive */
+#cartCount {
+    font-size: 15px; /* Adjust the font size as needed */
+    vertical-align: bottom; /* Align to the top of the line */
+    margin-left: 0.5px; /* Add some space from the cart icon */
+    color: rgb(0, 0, 0); /* Change color if needed */
+    /* Additional styling as needed */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.paragraph-class {
+    font-size: 20px; /* Adjust the size */
+}
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.tagline {
+    color: #413e3e;
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+
+}
+
+
+.footer {
+    background-image: url("images/footer/trns.png");
+    margin-top: 100px;
+    background-color: #b3a7a7; /* Your chosen background color */
+    padding: 0.1rem; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.footer .box-container {
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-around; /* This will distribute space around the items */
+    align-items:normal; /* Align items to the start of the cross axis */
+    flex-wrap: wrap; /* Allows items to wrap if needed */
+}
+
+.footer .box-container .box {
+    
+    flex: 1; /* Allows the box to grow */
+    min-width: 10%; /* Minimum width for each box */
+    box-sizing: border-box; /* Include padding and border */
+    padding: 2rem; /* Padding inside each box */
+   
+}
+.footer .box-container .box h3 {
+    color: #333;
+    font-size: 2.4rem;
+    margin-bottom: 1em; /* Add some space below the heading */
+}
+
+.footer .box-container .box a {
+    display:flow-root;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    padding: 0.9rem ;
+    text-decoration:wavy; /* Remove underline */
+}
+
+.footer .box-container .box a:hover {
+    color: var(--pink);
+    text-decoration: dotted;
+}
+
+.footer .credit {
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-top: 0.5rem solid rgba(0, 0, 0, .1);
+    font-size: 1rem;
+    color: #333;
+}
+
+
+
 @media (max-width: 600px) {
     .cart-item {
         flex-direction: column;

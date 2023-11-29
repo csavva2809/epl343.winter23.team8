@@ -11,6 +11,7 @@
     position: sticky; 
     top: 0;
     left:0;
+    
 }
 
 #navbar{
@@ -145,6 +146,14 @@ body {
 
 .btn-add-to-cart:hover {
     background-color: #45a049;
+}
+
+#cartCount {
+    font-size: 14px; /* Adjust the font size as needed */
+    vertical-align: bottom; /* Align to the top of the line */
+    margin-left: 0.5px; /* Add some space from the cart icon */
+    color: rgb(0, 0, 0); /* Change color if needed */
+    /* Additional styling as needed */
 }
 
 /* Responsive design */

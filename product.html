@@ -12,23 +12,28 @@
 <body>
 
     <section id="header">
-        <a href="#">
-            <img src="/images/transparent_logoanthemio2.png" class="logo" height="65" width="200">
+        <a href="http://127.0.0.1:5500/website.html">
+            <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
             <div>
                 <nav id="navbar">
-                    <li><a href="website.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="abt.html">About</a></li>
-                    <li><a href="review.html">Review</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a class="active" href="cart.html"><img
+                    <li><a class="active" href="website.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="cart.html"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
-                                height="20" width="35" class="cart"></a></li> <!-- "Cart" is now active -->
+                                height="20" width="35" class="cart">
+                                <span id="cartCount">0</span> <!-- This will display the cart count -->
+
+                            </a></li>
+
+
                     <li><a class="buttonlogin" href="login.html"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
             </div>
         </a>
+
+
     </section>
 
     <section id="product-detail">
@@ -254,7 +259,7 @@
             //christmas
 
             'Carol': {
-                name: 'Carol',
+                name: 'A Christmas Carol',
                 image: 'images/christmas/A Christmas carol.jpg',
                 description: 'A selection of customer favourite flowers and foliage in a design that’s simply the perfect Christmas present.',
                 price: '49.50'
@@ -367,7 +372,7 @@
 
             },
             'Rosesbox': {
-                name: 'Roses in box',
+                name: 'Roses In Box',
                 image: 'images/anniversary/roses_in_box.jpg',
                 description: 'Elevate Your Day with a Box of Radiant Roses',
                 price: '40.00'
@@ -623,14 +628,14 @@
 
             },
             'portokalia': {
-                name: 'Moonlind Harvest Sunset RosesOrchid',
+                name: 'Moonlind Harvest Sunset Roses',
                 image: 'images/plants/portokalia.jpg',
                 description: 'Experience the Delicate Charm of Miniature Orange Roses - Perfect for Any Occasion!',
                 price: '20.00'
 
             },
             'woodland': {
-                name: 'Moonlind Harvest Sunset RosesOrchid',
+                name: 'Woodland',
                 image: 'images/plants/woodland.jpg',
                 description: 'Bring a touch of nature into your space with our charming small wooden planters.Perfect for adding a pop of greenery to any corner of your home or office.',
                 price: '15.00'
@@ -954,9 +959,17 @@
 
         // Call the update function on page load
         document.addEventListener('DOMContentLoaded', updateProductDetails);
+
     </script>
 
     <script>
+        function updateCartCount() {
+            let cart = localStorage.getItem('cart');
+            cart = cart ? JSON.parse(cart) : [];
+            let count = cart.length;
+            document.getElementById('cartCount').textContent = count;
+        }
+
         function addToCart() {
             // Check if a cart array already exists in localStorage
             let cart = localStorage.getItem('cart');
@@ -976,16 +989,17 @@
                 cart.push(product);
                 // Save the updated cart back to localStorage
                 localStorage.setItem('cart', JSON.stringify(cart));
-                // Optionally, update cart count in the UI
-                alert(`${product.name} added to cart.`);
+
+                // Update cart count in the UI
+                updateCartCount();
             } else {
                 alert('Error: Product not found.');
             }
-
         }
         // Load product details on page load
         document.addEventListener('DOMContentLoaded', function () {
             updateProductDetails();
+            updateCartCount(); // Initialize cart count on page load
         });
 
         // Function to update the product details on the page

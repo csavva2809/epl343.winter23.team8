@@ -9,26 +9,24 @@
 </head>
 <body>
     <section id="header">
-        <a href="#">
-            <img src="/images/transparent_logoanthemio2.png" class="logo" height="65" width="200">
+        <a href="http://127.0.0.1:5500/website.html">
+            <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
             <div>
                 <nav id="navbar">
                     <li><a class="active" href="website.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="review.html">Review</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+
                     <li><a href="cart.html"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
-                                height="20" width="35" class="cart"></a></li>
+                                height="20" width="35" class="cart"></a><span id="cartCount">0</span></li>
                     <li><a class="buttonlogin" href="login.html"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
             </div>
         </a>
 
+
     </section>
-</section>
 
 <section id="product1" class="section-p1">
 
@@ -48,7 +46,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Sweetheart">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Sweetheart"></button>
                 
             </div>
         </div>
@@ -64,7 +62,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Smooch">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Smooch"></button>
             </div>
         </div>
 
@@ -80,7 +78,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Single_red_rose">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Single_red_rose"></button>
             </div>
         </div>
 
@@ -97,7 +95,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Rosesbox">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Rosesbox"></button>
             </div>
         </div>
 
@@ -113,7 +111,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Perfect_match">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Perfect_match"></button>
             </div>
         </div>
 
@@ -128,7 +126,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Little_something">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Little_something"></button>
             </div>
         </div>
 
@@ -143,7 +141,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Two_Forever_Roses">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Two_Forever_Roses"></button>
             </div>
         </div>
 
@@ -158,7 +156,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Cheers">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Cheers"></button>
             </div>
         </div>
 
@@ -173,7 +171,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Luxury">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Luxury"></button>
             </div>
         </div>
 
@@ -188,7 +186,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Sweetest_surprise">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Sweetest_surprise"></button>
             </div>
         </div>
 
@@ -204,7 +202,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Bear">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Bear"></button>
             </div>
         </div>
         
@@ -219,11 +217,22 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="Forever_Roses">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="Forever_Roses"></button>
             </div>
         </div>
 
+        <script>
 
+            function updateCartCount() {
+                let cart = localStorage.getItem('cart');
+                cart = cart ? JSON.parse(cart) : [];
+                let count = cart.length;
+                document.getElementById('cartCount').textContent = count;
+            }
+            
+            // Initialize cart count on page load
+            document.addEventListener('DOMContentLoaded', updateCartCount);
+            </script>
         
 
 </body>

@@ -9,23 +9,22 @@
 </head>
 <body>
     <section id="header">
-        <a href="#">
-            <img src="/images/transparent_logoanthemio2.png" class="logo" height="65" width="200">
+        <a href="http://127.0.0.1:5500/website.html">
+            <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
             <div>
                 <nav id="navbar">
                     <li><a class="active" href="website.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="review.html">Review</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+
                     <li><a href="cart.html"><img
                                 src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
-                                height="20" width="35" class="cart"></a></li>
+                                height="20" width="35" class="cart"><span id="cartCount">0</span></a></li>
                     <li><a class="buttonlogin" href="login.html"><button class="btnLogin">Login</button></a></li>
                 </nav>
 
             </div>
         </a>
+
 
     </section>
 
@@ -46,7 +45,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="jelly">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="jelly"></button>
 
             </div>
         </div>
@@ -62,7 +61,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="little">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="little"></button>
             </div>
         </div>
 
@@ -78,7 +77,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="colour">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="colour"></button>
             </div>
         </div>
 
@@ -93,7 +92,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="loving">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="loving"></button>
             </div>
         </div>
 
@@ -108,7 +107,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="perfect">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="perfect"></button>
             </div>
         </div>
 
@@ -123,7 +122,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="pink">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="pink"></button>
             </div>
         </div>
 
@@ -140,7 +139,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="plant">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="plant"></button>
             </div>
         </div>
 
@@ -155,7 +154,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="strawberry">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="strawberry"></button>
             </div>
         </div>
 
@@ -171,7 +170,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="tutti">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="tutti"></button>
             </div>
         </div>
 
@@ -186,7 +185,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="twist">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="twist"></button>
             </div>
         </div>
 
@@ -201,7 +200,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="above">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="above"></button>
             </div>
         </div>
 
@@ -216,11 +215,22 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <button class="btn-add-to-cart" data-product-id="dozen">Add to cart</button>
+                <button class="btn-add-to-cart" data-product-id="dozen"></button>
             </div>
         </div>
 
+        <script>
 
+            function updateCartCount() {
+                let cart = localStorage.getItem('cart');
+                cart = cart ? JSON.parse(cart) : [];
+                let count = cart.length;
+                document.getElementById('cartCount').textContent = count;
+            }
+            
+            // Initialize cart count on page load
+            document.addEventListener('DOMContentLoaded', updateCartCount);
+            </script>
 
 
 </body>
