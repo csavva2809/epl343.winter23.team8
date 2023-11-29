@@ -253,10 +253,9 @@ header {
         height: 100%;
       
     }
-}
-
-.footer {
+}.footer {
     background-image: url("images/footer/trns.png");
+    background-size: 45rem;
     margin-top: 100px;
     background-color: #b3a7a7;
     /* Your chosen background color */
@@ -305,7 +304,6 @@ header {
     padding: 0.5rem;
     text-decoration: wavy;
     /* Remove underline */
-    cursor: pointer; /* This will change the cursor to the 'pointer' hand when you hover over the link */
 
 }
 

@@ -132,43 +132,46 @@
         </section>
 
         <!-- footer section starts -->
+        </section>
+    <!-- footer section starts -->
     <section class="footer">
 
         <div class="box-container">
-            
+
             <div class="box">
-                
-                <h3>Quick links </h3>
-              
-                <a href="http://127.0.0.1:5500/website.php">Home</a>
-                <a href="http://127.0.0.1:5500/about.php">About</a>
-                <a href="http://127.0.0.1:5500/cart.php">My cart</a>
+
+
+
+                <nav id="quicklinks">
+                    <h3>Quick links</h3>
+                    <li><a class="active" href="website.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="cart.php">My Cart</a></li>
+                </nav>
+
+
+
             </div>
-    
+
             <div class="box">
                 <h3>Delivery</h3>
                 <a>Nicosia</a>
                 <a>Limmasol</a>
                 <a>Paphos</a>
                 <a>Larnaca</a>
-    
+
             </div>
             <div class="box">
                 <h3>Contact Info</h3>
                 <a>Telephone: +357 225 14415 / 00357 99 64 3392</a>
                 <a href="mailto:rentheo@gmail.com" class="email-button">E-mail: rentheo@gmail.com
                 </a>
-    
+
                 <a href="https://www.instagram.com/anthemioflowershop/?hl=el">Instagram: anthemioflowershop</a>
                 <a href="https://www.facebook.com/anthemioflowershop/">Facebook: Anthemio Flowershop</a>
-    
+
             </div>
-    
-    
-            <div class="des">
-    
-    
-            </div>
+    </section>
 
         <script src="path/to/common.js"></script>
         <script src="cart.js"></script> <!-- Link to your JavaScript file -->
