@@ -134,7 +134,8 @@
         function updateCartCount() {
             let cart = localStorage.getItem('cart');
             cart = cart ? JSON.parse(cart) : [];
-            let count = cart.length;
+            //let count = cart.length;
+            let count = cart.getItem*cart.getElementById;
             document.getElementById('cartCount').textContent = count;
         }
     
@@ -146,9 +147,6 @@
 
     </div>
     </div>
-
- 
-
 
 </body>
 
