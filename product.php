@@ -1017,6 +1017,7 @@
             updateCartCount(); 
         });
 
+        // Function to update the product details on the page
         function updateProductDetails() {
             var params = getQueryParams();
             if (params.product && productDetails[params.product]) {
