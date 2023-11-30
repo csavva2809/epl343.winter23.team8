@@ -12,6 +12,14 @@
 <body>
 
     <body>
+        <div id="email-status-message" class="email-status-message">
+            <?php
+            if (isset($_SESSION['email_status'])) {
+                echo $_SESSION['email_status'];
+                unset($_SESSION['email_status']);
+            }
+            ?>
+        </div>
         <section id="header">
             <a href="website.php">
                 <img src="images/transparent_logoanthemio2.png" class="logo" height="82" width="240" alt="Home">
@@ -33,9 +41,6 @@
 
             </a>
         </section>
-
-
-
         <section id="cart-page">
             <div class="container">
                 <header>
@@ -122,7 +127,11 @@
                     </div>
 
                     <input type="submit" class="checkout-button" value="Checkout">
-                    <div id="checkoutMessage" style="display: none;"></div>
+                    <div id="checkoutMessage" style="display: none;">
+                    
+                    </div>
+
+
             </div>
             </form>
             </div>
@@ -133,10 +142,9 @@
         </section>
 
 
-        <!-- footer section starts -->
-        <!-- footer section starts -->
+
         </section>
-        <!-- footer section starts -->
+
         <section class="footer">
 
             <div class="box-container">
@@ -176,7 +184,7 @@
         </section>
 
         <script src="path/to/common.js"></script>
-        <script src="cart.js"></script> <!-- Link to your JavaScript file -->
+        <script src="cart.js"></script> 
     </body>
 
 </html>

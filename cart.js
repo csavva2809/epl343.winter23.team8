@@ -118,8 +118,12 @@ function proceedToCheckout() {
         var messageElement = document.getElementById("checkoutMessage");
         messageElement.innerHTML = "Your order has been sent successfully!";
         messageElement.style.display = "block"; // Make the message visible
+
+        
     } 
 }
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var form = document.getElementById('checkout-form');

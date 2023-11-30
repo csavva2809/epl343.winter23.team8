@@ -12,17 +12,20 @@ function sendEmailVerification()
         $message = "Thank you for your order";
         $headers = "From: anthemioflowershop@gmail.com";
         if(mail($to, $subject, $message, $headers)) {
-            echo "Email sent successfully to $to";
+              $_SESSION['email_status'] = "Email sent successfully to $to";
         } else {
-            echo "Failed to send email";
+            $_SESSION['email_status'] = "Failed to send email";
         }
     } else{
-        echo "No user email found in session";
+        $_SESSION['email_status'] = "No user email found in session";
     }
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     sendEmailVerification();
+    header("Location: website.php");
+    exit();
+
 }
 
 ?>

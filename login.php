@@ -35,6 +35,7 @@ if (isset($_POST['login'])) {
     $count = mysqli_num_rows($result);
     if ($count == 1) {
         $_SESSION['login_success'] = "Login Successfully";
+        
     } else {
         $_SESSION['login_error'] = "Invalid login information";
     }
