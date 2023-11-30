@@ -11,12 +11,13 @@
 </head>
 
 <body>
-    <section id="header">
-        <a href="http://127.0.0.1:5500/website.php">
-            <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
+<section id="header">
+    <a href="website.php">
+            <img src="images/transparent_logoanthemio2.png" class="logo" height="82" width="240" alt="Home">
+        </a>
             <div>
                 <nav id="navbar">
-                    <li><a href="website.php">Home</a></li>
+                    <li><a  href="website.php">Home</a></li>
                     <li><a class="active" href="about.php">About</a></li>
 
                     <li><a href="cart.php"><img
@@ -29,7 +30,7 @@
             </div>
         </a>
 
-
+        </a>
     </section>
 
     <section id="hero">
@@ -69,7 +70,7 @@
                         </div>
                         <div class="telephone-container">
                             <img src="images/tilefono.png" class="telephone-image">
-                            <p>telephone: +357 225 14415 / 00357 99 64 3392</p>
+                            <p>telephone: +357 225 14415</p>
                         </div>
     
     
@@ -95,41 +96,42 @@
     <section class="footer">
 
         <div class="box-container">
-            
+
             <div class="box">
-                
-                <h3>Quick links </h3>
-              
-                <a href="http://127.0.0.1:5500/website.php">Home</a>
-                <a href="http://127.0.0.1:5500/about.php">About</a>
-                <a href="http://127.0.0.1:5500/cart.php">My cart</a>
+
+
+
+                <nav id="quicklinks">
+                    <h3>Quick links</h3>
+                    <li><a class="active" href="website.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="cart.php">My Cart</a></li>
+                </nav>
+
+
+
             </div>
-    
+
             <div class="box">
                 <h3>Delivery</h3>
                 <a>Nicosia</a>
                 <a>Limmasol</a>
                 <a>Paphos</a>
                 <a>Larnaca</a>
-    
+
             </div>
             <div class="box">
                 <h3>Contact Info</h3>
-                <a>Telephone: +357 225 14415 / 00357 99 64 3392</a>
+                <a>Telephone: +357 225 14415</a>
                 <a href="mailto:rentheo@gmail.com" class="email-button">E-mail: rentheo@gmail.com
                 </a>
-    
+
                 <a href="https://www.instagram.com/anthemioflowershop/?hl=el">Instagram: anthemioflowershop</a>
                 <a href="https://www.facebook.com/anthemioflowershop/">Facebook: Anthemio Flowershop</a>
-    
-            </div>
-    
-    
-            <div class="des">
-    
-    
+
             </div>
     </section>
+
     <script>
         function updateCartCount() {
             let cart = localStorage.getItem('cart');

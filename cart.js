@@ -61,8 +61,9 @@ function updateTotal() {
     cart.forEach((item, index) => {
         const quantityInput = document.querySelector(`.product-quantity[data-index="${index}"]`);
         const quantity = quantityInput ? parseInt(quantityInput.value) : item.quantity;
-        total = total + (item.price * quantity) + deliveryFee;
+        total = total + (item.price * quantity);
     });
+    total+=deliveryFee;
 
     document.querySelector('.total-price').textContent = `$${total.toFixed(2)}`;
     document.querySelector('.delivery-fee').textContent = `$${deliveryFee.toFixed(2)}`;
@@ -118,8 +119,12 @@ function proceedToCheckout() {
         var messageElement = document.getElementById("checkoutMessage");
         messageElement.innerHTML = "Your order has been sent successfully!";
         messageElement.style.display = "block"; // Make the message visible
+
+        
     } 
 }
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var form = document.getElementById('checkout-form');

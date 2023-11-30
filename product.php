@@ -12,29 +12,36 @@
 <body>
 
     <section id="header">
-        <a href="http://127.0.0.1:5500/website.php">
-            <img src="/images/transparent_logoanthemio2.png" class="logo" height="82" width="240">
-            <div>
-                <nav id="navbar">
-                    <li><a class="active" href="website.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
+        <a href="website.php">
+            <img src="images/transparent_logoanthemio2.png" class="logo" height="82" width="240" alt="Home">
+        </a>
+        <div>
+            <nav id="navbar">
+                <li><a class="active" href="website.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
 
-                    <li><a href="cart.php"><img
-                                src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
-                                height="20" width="35" class="cart">
-                                <span id="cartCount">0</span> <!-- This will display the cart count -->
+                <li><a href="cart.php"><img
+                            src="images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp"
+                            height="20" width="35" class="cart">
+                        <span id="cartCount">0</span>
+                        <div id="cartMessage" class="cart-message"></div>
+                    </a></li>
+                <li><a class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
+            </nav>
 
-                            </a></li>
-
-
-                    <li><a class="buttonlogin" href="login.php"><button class="btnLogin">Login</button></a></li>
-                </nav>
-
-            </div>
+        </div>
         </a>
 
-
+        </a>
     </section>
+    <style>
+        .cart-message {
+            color: black;
+            font-size: 14px;
+            margin-top: 5px;
+          
+        }
+    </style>
 
     <section id="product-detail">
         <div class="product-image">
@@ -947,7 +954,7 @@
                 document.getElementById('productImage').src = product.image;
                 document.getElementById('productName').textContent = product.name;
                 document.getElementById('productDescription').textContent = product.description;
-                document.getElementById('productPrice').textContent = `$${product.price}`;
+                document.getElementById('price').textContent = `€${product.price}`;
             } else {
                 // Handle case where product is not found or no product is specified
                 document.getElementById('productImage').src = 'path/to/default/image.jpg';
@@ -963,15 +970,22 @@
     </script>
 
     <script>
+
         function updateCartCount() {
             let cart = localStorage.getItem('cart');
             cart = cart ? JSON.parse(cart) : [];
-            let count = cart.length;
-            document.getElementById('cartCount').textContent = count;
+            // Calculate the total quantity
+            let totalQuantity = 0;
+            for (const item of cart) {
+                totalQuantity += (item.quantity || 1); // Add the quantity of each item 
+            }
+            // let count = cart.length;
+            document.getElementById('cartCount').textContent = totalQuantity;
         }
 
+        // Initialize cart count on page load
+        document.addEventListener('DOMContentLoaded', updateCartCount);
         function addToCart() {
-            // Check if a cart array already exists in localStorage
             let cart = localStorage.getItem('cart');
             if (cart) {
                 cart = JSON.parse(cart);
@@ -979,27 +993,28 @@
                 cart = [];
             }
 
-            // Assuming you have product details in your productDetails object
             const params = new URLSearchParams(window.location.search);
             const productId = params.get('product');
             const product = productDetails[productId];
 
             if (product) {
-                // Add the product to the cart array
                 cart.push(product);
-                // Save the updated cart back to localStorage
                 localStorage.setItem('cart', JSON.stringify(cart));
 
-                // Update cart count in the UI
+                document.getElementById('cartMessage').textContent = 'Added to cart';
                 updateCartCount();
             } else {
-                alert('Error: Product not found.');
+                document.getElementById('cartMessage').textContent = 'Error: Product not found.';
             }
+
+            setTimeout(() => {
+                document.getElementById('cartMessage').textContent = '';
+            }, 1500); 
         }
-        // Load product details on page load
+
         document.addEventListener('DOMContentLoaded', function () {
             updateProductDetails();
-            updateCartCount(); // Initialize cart count on page load
+            updateCartCount(); 
         });
 
         // Function to update the product details on the page
