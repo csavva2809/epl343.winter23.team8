@@ -18,3 +18,5 @@ Main Programming languages used: PHP, SQL, HTML, JavaScript, CSS.
 The members of the team where splitted into two teams:
             -Front end team: Chrysnathi Theocharidi, Vania Marouli, Eleni Loizou
             -Back end team: Konstantinos Savva, Giorgos Savva, Katerina Ioannidou, Chrysanthi Theocharidi
+
+Note: The localhost server must be configured in order for the AutoEmail to be functional.
