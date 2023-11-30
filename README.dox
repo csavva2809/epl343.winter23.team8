@@ -1,0 +1,20 @@
+@mainpage EPL343 Project-Team8
+@author Konstantinos Savva, Chrysanthi Theocharidi, Vania Marouli, Giorgos Savva, Eleni Loizou, Katerina Ioannidou
+@ID 1062509 1096339 1087605 1065920 1097449 1103425
+@Date 30-11-2023
+
+Github: https://github.com/csavva2809/epl343.winter23.team8
+
+This project was an EPL343 assignment. The goal was to create a website for "Anthemio Flowershop". With the following code
+the team achived to create an online shop with the following functions:
+    -Login/rigister function: Creates accounts fore each user and stores the data in a database for management purposes like Login.
+    -Cart/Checkout function: The user is able to select items and add them to the cart where he/her can remove or change quantities.
+     The cart is able to automatically calculate tha total amount of the purchase and add at the end a standar delivery fee.
+    -AutoEmail function: The system procceds to send an email to the user after the checkout is complete. The email is retrieved from the 
+     database when the user logs in their account.
+
+Main Programming languages used: PHP, SQL, HTML, JavaScript, CSS.
+
+The members of the team where splitted into two teams:
+            -Front end team: Chrysnathi Theocharidi, Vania Marouli, Eleni Loizou
+            -Back end team: Konstantinos Savva, Giorgos Savva, Katerina Ioannidou, Chrysanthi Theocharidi
