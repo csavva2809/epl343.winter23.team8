@@ -255,7 +255,7 @@ header {
     }
 }.footer {
     background-image: url("images/footer/trns.png");
-    background-size: 45rem;
+    background-size: 40rem;
     margin-top: 100px;
     background-color: #b3a7a7;
     /* Your chosen background color */
@@ -293,7 +293,7 @@ header {
 .footer .box-container .box h3 {
     color: #333;
     font-size: 2.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
     /* Add some space below the heading */
 }
 
@@ -301,11 +301,12 @@ header {
     display: flow-root;
     color: rgb(0, 0, 0);
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 0.3rem;
     text-decoration: wavy;
     /* Remove underline */
 
 }
+
 
 .footer .box-container .box a:hover {
     color: var(--pink);

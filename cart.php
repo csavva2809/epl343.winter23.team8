@@ -39,11 +39,12 @@
         <section id="cart-page">
             <div class="container">
                 <header>
-                    <p style="font-size: 40px;"><b></b>Anthemio FlowerShop</b></p>
+                    <p style ="font-size: 40px;"><b></b>Anthemio FlowerShop</b></p>
                     <br>
                     <br>
                     <br>
                     <p class="tagline">BAG</p>
+                    <br>
                 </header>
             </div>
             <!-- Cart Items -->
@@ -110,7 +111,8 @@
                     <span>Delivery Fee: </span>
                     <span class="delivery-fee"></span>
 
-                    <br><br>
+                    <br> 
+                    <br>
 
                     <div>
                         <span>Total: </span>
@@ -126,14 +128,16 @@
             </div>
         </section>
 
+
+        <!-- footer section starts -->
         <!-- footer section starts -->
         </section>
-        <!-- footer section starts -->
-        <section class="footer">
+    <!-- footer section starts -->
+    <section class="footer">
 
             <div class="box-container">
 
-                <div class="box">
+            <div class="box">
 
 
 
@@ -143,7 +147,6 @@
                         <li><a href="about.php">About</a></li>
                         <li><a href="cart.php">My Cart</a></li>
                     </nav>
-
 
 
                 </div>
@@ -165,8 +168,8 @@
                     <a href="https://www.instagram.com/anthemioflowershop/?hl=el">Instagram: anthemioflowershop</a>
                     <a href="https://www.facebook.com/anthemioflowershop/">Facebook: Anthemio Flowershop</a>
 
-                </div>
-        </section>
+            </div>
+    </section>
 
         <script src="path/to/common.js"></script>
         <script src="cart.js"></script> <!-- Link to your JavaScript file -->
