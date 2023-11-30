@@ -39,7 +39,7 @@
         <section id="cart-page">
             <div class="container">
                 <header>
-                    <p style ="font-size: 40px;"><b></b>Anthemio FlowerShop</b></p>
+                    <p style="font-size: 40px;"><b></b>Anthemio FlowerShop</b></p>
                     <br>
                     <br>
                     <br>
@@ -108,22 +108,26 @@
                         <p id="payment-method">Cash on Delivery</p>
                     </div>
 
-                    <span>Delivery Fee: </span>
-                    <span class="delivery-fee"></span>
+                    <div class="fee-section">
+                        <span>Delivery Fee: </span>
+                        <span class="delivery-fee"></span>
+                    </div>
 
-                    <br> 
                     <br>
+                    <br>
+                    <div class="fee-section">
 
-                    <div>
                         <span>Total: </span>
                         <span class="total-price"></span>
-                        <input type="submit" class="checkout-button" value="Checkout">
-                        <div id="checkoutMessage" style="display: none;"></div>
                     </div>
-                </form>
+
+                    <input type="submit" class="checkout-button" value="Checkout">
+                    <div id="checkoutMessage" style="display: none;"></div>
             </div>
-            
-            
+            </form>
+            </div>
+
+
             </form>
             </div>
         </section>
@@ -132,12 +136,12 @@
         <!-- footer section starts -->
         <!-- footer section starts -->
         </section>
-    <!-- footer section starts -->
-    <section class="footer">
+        <!-- footer section starts -->
+        <section class="footer">
 
             <div class="box-container">
 
-            <div class="box">
+                <div class="box">
 
 
 
@@ -168,8 +172,8 @@
                     <a href="https://www.instagram.com/anthemioflowershop/?hl=el">Instagram: anthemioflowershop</a>
                     <a href="https://www.facebook.com/anthemioflowershop/">Facebook: Anthemio Flowershop</a>
 
-            </div>
-    </section>
+                </div>
+        </section>
 
         <script src="path/to/common.js"></script>
         <script src="cart.js"></script> <!-- Link to your JavaScript file -->

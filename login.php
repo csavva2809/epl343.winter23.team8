@@ -1,5 +1,5 @@
 <?php
-session_start(); 
+session_start();
 if (isset($_POST['register'])) {
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
@@ -14,30 +14,30 @@ if (isset($_POST['register'])) {
         $stmt = $conn->prepare("INSERT INTO userinfo (firstName, lastName, email, password) VALUES (?, ?, ?, ?)");
         $stmt->bind_param("ssss", $firstName, $lastName, $email, $password);
         $stmt->execute();
-        echo "Registration Successfully";
+        $_SESSION['registration_success'] = "Registration Successfully";
         $stmt->close();
         $conn->close();
     }
 }
 ?>
 
-<?php 
-    if(isset($_POST['login'])){
-        $email = $_POST['email'];
-        $password = $_POST['password'];
+
+<?php
+if (isset($_POST['login'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
     $conn = new mysqli("localhost", "root", "", "anthemioflowershop");
 
-        $sql = "select * from userinfo where email = '$email' and password = '$password'";
-        $result = mysqli_query($conn, $sql);  
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-        $count = mysqli_num_rows($result);  
-        if($count == 1){  
-            echo "login Successfully";
-        }  
-        else{  
-            echo  "invalid login information";
-        }     
+    $sql = "select * from userinfo where email = '$email' and password = '$password'";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $count = mysqli_num_rows($result);
+    if ($count == 1) {
+        $_SESSION['login_success'] = "Login Successfully";
+    } else {
+        $_SESSION['login_error'] = "Invalid login information";
+    }
 
 
 }
@@ -55,6 +55,27 @@ if (isset($_POST['register'])) {
 </head>
 
 <body>
+<div id="registration-success" class="registration-success">
+    <?php
+    if (isset($_SESSION['registration_success'])) {
+        echo $_SESSION['registration_success'];
+        unset($_SESSION['registration_success']);
+    }
+    ?>
+</div>
+
+<div id="login-message" class="login-message">
+    <?php
+    if (isset($_SESSION['login_success'])) {
+        echo $_SESSION['login_success'];
+        unset($_SESSION['login_success']);
+    } elseif (isset($_SESSION['login_error'])) {
+        echo $_SESSION['login_error'];
+        unset($_SESSION['login_error']);
+    }
+    ?>
+</div>
+
     <section id="header">
         <a href="website.php">
             <img src="images/transparent_logoanthemio2.png" class="logo" height="82" width="240" alt="Home">
@@ -78,7 +99,45 @@ if (isset($_POST['register'])) {
         </a>
     </section>
 
+    <style>
+    .registration-success {
+        position: fixed; 
+        top: 30%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        color:palevioletred;
+        font-size: 1.2em;
+        padding: 10px;
+        z-index: 1000; 
+    }
+
+    .login-message {
+    position: fixed;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    z-index: 1000;
+    color:palevioletred;
+}
+
+.login-success {
+    color:palevioletred;
+    background-color: white;
+}
+
+.login-error {
+    color:palevioletred;
+    background-color: white;
+}
+
+</style>
+
     <div class="full-page">
+
         <div id='login=form' class='login-page'>
             <div class="form-box">
                 <div class='button-box'>
@@ -110,6 +169,8 @@ if (isset($_POST['register'])) {
     </div>
 
     </section>
+   
+
     <!-- footer section starts -->
     <section class="footer">
 
@@ -192,6 +253,28 @@ if (isset($_POST['register'])) {
                 modal.style.display = "none";
             }
         }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+             
+                if (successMessage)t
+                 {   var successMessage = document.getElementById('registration-success');
+                    successMessage.style.display = 'none';
+                }
+            }, 1500); 
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+             
+                if (successMessage)t
+                 {   var successMessage = document.getElementById('login-message');
+                    successMessage.style.display = 'none';
+                }
+            }, 1500); 
+        });
+
     </script>
 
 
