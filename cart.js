@@ -61,8 +61,9 @@ function updateTotal() {
     cart.forEach((item, index) => {
         const quantityInput = document.querySelector(`.product-quantity[data-index="${index}"]`);
         const quantity = quantityInput ? parseInt(quantityInput.value) : item.quantity;
-        total = total + (item.price * quantity) + deliveryFee;
+        total = total + (item.price * quantity);
     });
+    total+=deliveryFee;
 
     document.querySelector('.total-price').textContent = `$${total.toFixed(2)}`;
     document.querySelector('.delivery-fee').textContent = `$${deliveryFee.toFixed(2)}`;

@@ -329,7 +329,7 @@
             </div>
             <div class="box">
                 <h3>Contact Info</h3>
-                <a>Telephone: +357 225 14415 / 00357 99 64 3392</a>
+                <a>Telephone: +357 225 14415</a>
                 <a href="mailto:rentheo@gmail.com" class="email-button">E-mail: rentheo@gmail.com
                 </a>
 

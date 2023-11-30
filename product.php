@@ -1025,7 +1025,7 @@
                 document.getElementById('productImage').src = product.image;
                 document.getElementById('productName').textContent = product.name;
                 document.getElementById('productDescription').textContent = product.description;
-                document.getElementById('productPrice').textContent = `€${product.price}`;
+                document.getElementById('productPrice').textContent = `$${product.price}`;
             } else {
                 // Handle case where product is not found or no product is specified
                 document.getElementById('productImage').src = 'path/to/default/image.jpg';

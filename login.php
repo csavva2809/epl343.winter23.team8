@@ -23,6 +23,7 @@ if (isset($_POST['register'])) {
 
 
 <?php
+
 if (isset($_POST['login'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -35,6 +36,7 @@ if (isset($_POST['login'])) {
     $count = mysqli_num_rows($result);
     if ($count == 1) {
         $_SESSION['login_success'] = "Login Successfully";
+        $_SESSION['user_email'] = $email;
         
     } else {
         $_SESSION['login_error'] = "Invalid login information";
@@ -202,7 +204,7 @@ if (isset($_POST['login'])) {
             </div>
             <div class="box">
                 <h3>Contact Info</h3>
-                <a>Telephone: +357 225 14415 / 00357 99 64 3392</a>
+                <a>Telephone: +357 225 14415</a>
                 <a href="mailto:rentheo@gmail.com" class="email-button">E-mail: rentheo@gmail.com
                 </a>
 
