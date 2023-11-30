@@ -1,5 +1,5 @@
 <?php
-// Handle Registration
+session_start(); 
 if (isset($_POST['register'])) {
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
@@ -22,6 +22,7 @@ if (isset($_POST['register'])) {
 ?>
 
 <?php 
+session_start(); 
     if(isset($_POST['login'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -33,6 +34,7 @@ if (isset($_POST['register'])) {
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
         $count = mysqli_num_rows($result);  
         if($count == 1){  
+            $_SESSION['user_email'] = $email;
             echo "login Successfully";
         }  
         else{  
